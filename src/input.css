@@ -1,0 +1,45 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+  .layout-container {
+    @apply flex flex-col items-center justify-center gap-10 px-16 py-20 bg-white;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 10px;
+  }
+  .btn-primary {
+    @apply bg-primary uppercase text-body16 font-bold shadow-shadow2 leading-leading_btn text-white px-6 py-3 hover:opacity-80 transition duration-300;
+  }
+
+  .btn-secondary {
+    @apply bg-neu0 uppercase text-h5 font-bold shadow-shadow1 text-white px-6 py-[10px] hover:opacity-80 transition duration-300;
+  }
+  .btn-arrow-primary {
+    @apply text-white px-[15px] py-3 hover:bg-white hover:text-primary transition duration-300;
+  }
+
+  .btn-arrow-slider {
+    @apply text-neu1 p-[11px] rounded-lg border-neu3 border px-[15px] py-3 hover:bg-white hover:border-white hover:text-primary transition duration-300;
+  }
+  .heading_section {
+    @apply uppercase text-h2 font-bold text-primary transition duration-300;
+  }
+
+  .link_menu ul li a {
+    @apply text-neu1 font-normal inline-block text-center hover:text-primary transition-all duration-150;
+  }
+  .link_menu ul li a:hover {
+    font-weight: 700;
+    text-shadow: 1px 0 0 currentColor;
+  }
+  .link_menu ul li a::before {
+    content: attr(title);
+    height: 0;
+    display: block;
+    font-weight: 700;
+    overflow: hidden;
+    visibility: hidden;
+  }
+}
