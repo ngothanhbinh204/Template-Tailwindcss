@@ -6,11 +6,26 @@ module.exports = {
   ],
   theme: {
     extend: {
+      screens: {
+        sm: "640px", // Mobile nhỏ
+        md: "850px", // Tablet
+        lg: "1024px", // Laptop nhỏ
+        xl: "1280px", // Desktop
+        "2xl": "1536px", // Màn hình lớn
+      },
       container: {
         center: true, // Đảm bảo container luôn căn giữa
+        padding: {
+          DEFAULT: "10px", // Padding mặc định
+          sm: "10px", // Padding cho màn hình nhỏ
+          md: "10px", // Padding cho màn hình trung bình
+          lg: "10px", // Padding cho màn hình lớn
+          xl: "10px", // Padding cho màn hình rất lớn
+          "2xl": "10px", // Padding cho màn hình cực lớn
+        },
       },
       fontFamily: {
-        sans: ["Montserrat", "sans-serif"],
+        sans: ["Inter", "sans-serif"], // Thêm font Inter vào font mặc định
       },
       colors: {
         primary: "#AD7314", // Màu chính
@@ -23,6 +38,7 @@ module.exports = {
         neu5: "#ebebf0",
         neu6: "#E6E6E8",
         neu7: "#424242",
+        neu444: "#444444",
       },
       fontSize: {
         h1: ["40px", { lineHeight: "150%", fontWeight: "700" }],
@@ -44,6 +60,13 @@ module.exports = {
       },
       lineHeight: {
         leading_btn: "19.5px",
+      },
+    },
+    variants: {
+      extend: {
+        display: ["group-focus"],
+        opacity: ["group-focus"],
+        inset: ["group-focus"],
       },
     },
   },

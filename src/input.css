@@ -1,6 +1,36 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+body {
+  overflow-x: hidden;
+}
+/* Điện thoại nhỏ */
+@media (max-width: 576px) {
+  body {
+    font-size: 14px;
+  }
+}
+
+/* Máy tính bảng */
+@media (min-width: 768px) {
+  body {
+    font-size: 16px;
+  }
+}
+
+/* Laptop nhỏ */
+@media (min-width: 992px) {
+  body {
+    font-size: 18px;
+  }
+}
+
+/* Desktop lớn */
+@media (min-width: 1200px) {
+  body {
+    font-size: 20px;
+  }
+}
 
 @layer components {
   .layout-container {
@@ -27,19 +57,38 @@
     @apply uppercase text-h2 font-bold text-primary transition duration-300;
   }
 
-  .link_menu ul li a {
-    @apply text-neu1 font-normal inline-block text-center hover:text-primary transition-all duration-150;
+  .link_menu {
+    @apply uppercase relative inline-block my-0;
+    display: inline-block;
   }
-  .link_menu ul li a:hover {
+  .link_menu {
+    @apply text-neu1 text-body font-normal inline-block text-left hover:text-primary transition-all duration-150;
+  }
+  .link_menu a:hover {
     font-weight: 700;
-    text-shadow: 1px 0 0 currentColor;
+    text-shadow: 0.5px 0 0 currentColor;
   }
-  .link_menu ul li a::before {
+  .link_menu a::before {
     content: attr(title);
     height: 0;
     display: block;
     font-weight: 700;
     overflow: hidden;
     visibility: hidden;
+  }
+  /* .menu_left .link_menu {
+    text-align: left;
+  }
+  .menu_right .link_menu {
+    text-align: right;
+  } */
+  .logo-area {
+    left: calc(50% - 50px);
+  }
+  .plo::after {
+    content: "";
+    display: block;
+    width: 126px; /* Chiều rộng của logo */
+    flex-shrink: 0;
   }
 }

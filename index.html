@@ -1,4 +1,3 @@
-<!-- index.html -->
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -6,58 +5,216 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Tailwind CSS with Vite</title>
     <link rel="stylesheet" href="/src/input.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
   </head>
-  <body style="background: #eee676">
-    <div class="layout-container">
-      <header class="flex justify-between items-center p-4">
-        <div class="main_menu">
-          <div class="inner_main_menu">
-            <ul class="list-none">
-              <li>Contact</li>
-              <li>Contact</li>
-              <li>Contact</li>
-              <li>Contact</li>
-              <li>Contact</li>
-              <li>Contact</li>
-              <li>Contact</li>
-            </ul>
+  <body class="font-sans">
+    <section
+      class="section_header sticky top-0 left-0 w-full shadow-shadow2 z-50 bg-white"
+    >
+      <div class="container max-w-[1200px]">
+        <header class="w-full">
+          <div class="top-menu flex flex-rows justify-between py-2.5">
+            <div class="item w-4/12 text-body md:text-body16 text-neu444">
+              <p>Welcome to PICKET & HILL!</p>
+            </div>
+            <div class="item flex items-center justify-between">
+              <div class="inner flex gap-2 items-center">
+                <div class="icon_phone flex-shrink-0">
+                  <svg
+                    class="w-4 md:w-full"
+                    width="20"
+                    height="21"
+                    viewBox="0 0 20 21"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M19.4296 14.6327L15.0546 12.7577C14.8677 12.678 14.6599 12.6612 14.4627 12.7099C14.2654 12.7585 14.0893 12.8698 13.9608 13.0272L12.0233 15.3944C8.98248 13.9607 6.53535 11.5136 5.10165 8.47283L7.46888 6.5353C7.62657 6.40705 7.73818 6.23091 7.78681 6.03355C7.83545 5.8362 7.81846 5.62837 7.73842 5.44153L5.86338 1.06645C5.77554 0.865046 5.62016 0.700605 5.42406 0.601483C5.22796 0.502361 5.00341 0.474773 4.78915 0.523474L0.726575 1.46099C0.519997 1.50869 0.335688 1.62501 0.203728 1.79095C0.0717689 1.95689 -4.75872e-05 2.16266 2.36575e-08 2.37468C2.36575e-08 12.3944 8.12123 20.5 18.1253 20.5C18.3374 20.5001 18.5433 20.4284 18.7093 20.2964C18.8753 20.1644 18.9917 19.9801 19.0394 19.7734L19.9769 15.7109C20.0253 15.4955 19.9971 15.2701 19.8972 15.0733C19.7973 14.8765 19.632 14.7207 19.4296 14.6327Z"
+                      fill="#AD7314"
+                    />
+                  </svg>
+                </div>
+                <div
+                  class="phone text-primary font-semibold text-body16 md:text-h4"
+                >
+                  0123 456 789
+                </div>
+              </div>
+              <div
+                class="inner flex-1 flex flex-rows list_icon gap-10 ml-[62px]"
+              >
+                <div class="icon flex-1">
+                  <img src="img/social.svg" alt="" />
+                </div>
+                <div class="icon flex-1">
+                  <img src="img/social.svg" alt="" />
+                </div>
+                <div class="icon flex-1">
+                  <img src="img/social.svg" alt="" />
+                </div>
+                <div class="icon flex-1">
+                  <img src="img/social.svg" alt="" />
+                </div>
+              </div>
+            </div>
           </div>
-        </div>
-      </header>
-    </div>
-    <div class="layout-container mx-auto">
-      <h1 class="text-h1">Đây là Heading 1</h1>
-      <h2 class="text-h2 heading_section">Đây là Heading 2</h2>
-      <p class="text-body">Đây là đoạn văn bản</p>
-      <span class="text-small">Đây là văn bản nhỏ</span>
-      <div class="wrapper">
-        <div class="flex items-center justify-center gap-2">
-          <button class="button btn-primary">Contact</button>
-          <button class="button btn-secondary">Get Started</button>
-          <button class="button btn-arrow-primary">Get Started</button>
-          <button class="button btn-arrow-slider">
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              fill="none"
-              viewBox="0 0 24 24"
-              stroke-width="1.5"
-              stroke="currentColor"
-              class="w-6 h-6"
-            >
-              <path
-                stroke-linecap="round"
-                stroke-linejoin="round"
-                d="M5 13l4 4L19 7"
-              />
-            </svg>
-          </button>
-        </div>
+          <hr class="text-neu6" />
+          <div class="main_menu relative w-full py-4">
+            <div class="inner_main_menu flex justify-between items-center">
+              <!-- Nhóm mục bên trái -->
+              <nav
+                class="hidden md:flex justify-between max-w-[456px] items-center space-x-4 flex-1"
+              >
+                <a class="link_menu" href="" title="Home">Home</a>
+                <a class="link_menu" href="" title="About Us">About Us</a>
+                <a class="link_menu" href="" title="Product">Product</a>
+                <a class="link_menu" href="" title="Gallery">Gallery</a>
+              </nav>
+
+              <!-- Logo opacity 0 để tạo khoảng trống -->
+              <div
+                class="hidden md:block logo-area h-11 max-w-[150px] opacity-0 flex-shrink-0 mx-auto z-10"
+              >
+                <a href="">
+                  <img src="/img/logo_hill.png" alt="Logo" class="" />
+                </a>
+              </div>
+              <!-- Logo thật ở giữa -->
+              <div
+                class="logo-area md:absolute md:left-1/2 md:top-1/2 md:transform md:-translate-x-1/2 md:-translate-y-[20%] z-10"
+              >
+                <a href="">
+                  <img
+                    src="/img/logo_hill.png"
+                    alt="Logo"
+                    class="max-w-[80px] md:max-w-[112px] lg:max-w-[126px] max-h-[126px]"
+                  />
+                </a>
+              </div>
+
+              <!-- Nhóm mục bên phải -->
+              <nav
+                class="hidden md:flex justify-between max-w-[456px] items-center space-x-3 flex-1"
+              >
+                <a class="link_menu" href="" title="Home">Article - News</a>
+
+                <a class="link_menu" href="" title="About Us">Contact</a>
+
+                <a class="btn btn-secondary" href="" title="">Get Started</a>
+              </nav>
+
+              <button
+                class="block md:hidden oy-3 px-4 mx-2 rounded-sm focus:outline-none hover:bg-primary hover:text-white group"
+              >
+                <div class="w-5 h-1 bg-neu2 mb-1"></div>
+                <div class="w-5 h-1 bg-neu2 mb-1"></div>
+                <div class="w-5 h-1 bg-neu2 mb-1"></div>
+                <div
+                  class="menu_mobile fixed top-0 -right-full h-screen w-8/12 bg-white border opacity-0 group-focus:right-0 group-focus:opacity-100 transition-all duration-300"
+                >
+                  <ul
+                    class="flex flex-col items-center w-full text-body18 cursor-pointer py-10"
+                  >
+                    <li>
+                      <a class="link_menu" href="" title="Home">Home</a>
+                    </li>
+                    <li>
+                      <a class="link_menu" href="" title="About Us">About Us</a>
+                    </li>
+                    <li>
+                      <a class="link_menu" href="" title="Product">Product</a>
+                    </li>
+                    <li>
+                      <a class="link_menu" href="" title="Gallery">Gallery</a>
+                    </li>
+                    <li>
+                      <a class="link_menu" href="" title="Home"
+                        >Article - News</a
+                      >
+                    </li>
+                    <li>
+                      <a class="link_menu" href="" title="About Us">Contact</a>
+                    </li>
+                    <li>
+                      <a class="btn btn-secondary" href="" title="">
+                        Get Started
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+              </button>
+            </div>
+          </div>
+        </header>
       </div>
-      <div class="link_menu">
-        <ul>
-          <li><a href="" title="Contact">Liên hệ </a></li>
-        </ul>
-      </div>
-    </div>
+    </section>
+    <section class="layout-container">
+      <p class="mb-2">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex cumque eos
+        non nulla pariatur molestias tempore veniam perferendis nihil! Obcaecati
+        odit odio omnis vitae? Tempora quos omnis earum perferendis labore?
+      </p>
+      <p class="mb-2">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex cumque eos
+        non nulla pariatur molestias tempore veniam perferendis nihil! Obcaecati
+        odit odio omnis vitae? Tempora quos omnis earum perferendis labore?
+      </p>
+      <p class="mb-2">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex cumque eos
+        non nulla pariatur molestias tempore veniam perferendis nihil! Obcaecati
+        odit odio omnis vitae? Tempora quos omnis earum perferendis labore?
+      </p>
+      <p class="mb-2">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex cumque eos
+        non nulla pariatur molestias tempore veniam perferendis nihil! Obcaecati
+        odit odio omnis vitae? Tempora quos omnis earum perferendis labore?
+      </p>
+      <p class="mb-2">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex cumque eos
+        non nulla pariatur molestias tempore veniam perferendis nihil! Obcaecati
+        odit odio omnis vitae? Tempora quos omnis earum perferendis labore?
+      </p>
+      <p class="mb-2">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex cumque eos
+        non nulla pariatur molestias tempore veniam perferendis nihil! Obcaecati
+        odit odio omnis vitae? Tempora quos omnis earum perferendis labore?
+      </p>
+    </section>
+    <section class="layout-container">
+      <p class="mb-2">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex cumque
+        eosádasd non nulla pariatur molestias tempore veniam perferendis nihil!
+        Obcaecatiádasd odit odio omnis vitae? Tempora quos omnis earum
+        perferendis labore?ádasdasasdasdasdasd
+      </p>
+      <p class="mb-2">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex cumque eos
+        non nulla pariatur molestias tempore veniam perferendis nihil! Obcaecati
+        odit odio omnis vitae? Tempora quos omnis earum perferendis labore?
+      </p>
+      <p class="mb-2">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex cumque eos
+        non nulla pariatur molestias tempore veniam perferendis nihil! Obcaecati
+        odit odio omnis vitae? Tempora quos omnis earum perferendis labore?
+      </p>
+      <p class="mb-2">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex cumque eos
+        non nulla pariatur molestias tempore veniam perferendis nihil! Obcaecati
+        odit odio omnis vitae? Tempora quos omnis earum perferendis labore?
+      </p>
+      <p class="mb-2">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex cumque eos
+        non nulla pariatur molestias tempore veniam perferendis nihil! Obcaecati
+        odit odio omnis vitae? Tempora quos omnis earum perferendis labore?
+      </p>
+      <p class="mb-2">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex cumque eos
+        non nulla pariatur molestias tempore veniam perferendis nihil! Obcaecati
+        odit odio omnis vitae? Tempora quos omnis earum perferendis labore?
+      </p>
+    </section>
   </body>
 </html>
