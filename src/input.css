@@ -106,7 +106,7 @@ body {
 
   .section_welcome {
     position: relative;
-    /* overflow: hidden; */
+    overflow: hidden;
   }
 
   .wrapper_welcome {
@@ -361,12 +361,51 @@ body {
     transform: translate(-157px, 11%);
   }
 
-  .section_our_services .wrapper_our_ser {
+  .wrapper_our_ser {
+    max-width: 664px;
+
+  }
+
+  .section_our_services {
+    background: rgba(240, 240, 240, 1);
+  }
+
+  .section_our_services .bg_wrapper {
+    padding-top: 50px;
+  }
+
+  @media (min-width: 1028px) {
+    .section_our_services .bg_wrapper {
+      padding-right: 60px;
+    }
+  }
+
+
+  @media (min-width: 1440px) {
+    .section_our_services .bg_wrapper {
+      padding-top: 50px;
+      padding-right: 227px;
+    }
+  }
+
+
+
+
+  .section_our_services .bg_wrapper::before {
+    content: "";
+    position: absolute;
+    /* inset: 1; */
+    width: 1145px;
+    height: 90%;
     background: linear-gradient(180deg, rgba(255, 219, 1, 0.4) 0%, rgba(255, 255, 255, 0) 100%);
-    border-radius: 10px;
+    border-radius: 24px;
     border: 1px solid rgba(255, 255, 255, 0.2);
     backdrop-filter: blur(8px);
     box-shadow: 0px 4px 4px 0px rgba(37, 37, 37, 0.16);
+    z-index: 0;
+    top: 0px;
+    transform: translateX(0%);
+    right: 0%;
 
   }
 
@@ -374,12 +413,14 @@ body {
     border-radius: 24px;
     /* border-width: 1px; */
     padding: 10px;
+    max-width: 316px;
   }
 
   .wrapper_our_ser .list_item .item .inner_item {
     background: rgba(255, 255, 255, 1);
     padding: 32px 24px;
-    border-radius: 20px
+    border-radius: 20px;
+    height: 100%;
   }
 
   .wrapper_our_ser .list_item .item::before {
@@ -418,9 +459,7 @@ body {
 
   }
 
-  .wrapper_our_ser {
-    max-width: 664px;
-  }
+
 
   .wrapper_our_ser .list_item .item .item-content p {
     font-family: Inter;
@@ -439,6 +478,10 @@ body {
     left: 5%;
   }
 
+  .wrapper_our_ser .list_item {
+    z-index: 5;
+  }
+
   .wrapper_our_ser .title_ser h2 {
     font-family: Inter;
     font-weight: 700;
@@ -447,5 +490,23 @@ body {
     letter-spacing: 0%;
     text-align: center;
 
+  }
+
+  .box_bannerourser {
+    width: 838px;
+    height: 951px;
+    overflow: hidden;
+    left: -8%;
+    top: 0;
+    z-index: 2;
+  }
+
+
+  .section_our_services .img_h_our_ser {
+
+
+    object-fit: cover;
+    transform: scale(1);
+    transform-origin: center;
   }
 }
