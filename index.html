@@ -1,221 +1,232 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
+
+<head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Tailwind CSS with Vite</title>
     <link rel="stylesheet" href="/src/input.css" />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap"
-      rel="stylesheet"
-    />
-  </head>
-  <body class="font-sans">
-    <section
-      class="section_header sticky top-0 left-0 w-full shadow-shadow2 z-50 bg-white"
-    >
-      <div class="container max-w-[1200px]">
-        <header class="w-full">
-          <div class="top-menu flex flex-rows justify-between py-2.5">
-            <div class="item w-4/12 text-body md:text-body16 text-neu444">
-              <p>Welcome to PICKET & HILL!</p>
+    <link rel="stylesheet" href="./dist/output.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet" />
+</head>
+
+<body class="tw-font-sans">
+    <section class="section_header tw-sticky tw-top-0 tw-left-0 tw-w-full tw-z-50 tw-bg-white">
+        <div class="tw-container tw-max-w-container">
+            <header class="header tw-grid tw-bg-white tw-my-auto">
+                <nav class="tw-flex tw-justify-between tw-items-center">
+                    <!-- logo  -->
+                    <div>
+                        <img class="tw-cursor-pointer" src="./img/LOGO QUATA 1.svg" alt="...">
+                    </div>
+                    <!-- link -->
+                    <div
+                        class="nav-links tw-text-body16 tw-duration-500 md:tw-static tw-absolute tw-bg-white md:tw-min-h-fit tw-min-h-[60vh] tw-left-0 tw-top-[-100%] md:tw-w-auto tw-w-full tw-flex tw-items-center tw-px-5">
+                        <ul class="tw-flex md:tw-flex-row tw-flex-col md:tw-items-center md:tw-gap-[20px] tw-gap-8">
+                            <li class="link_menu">
+                                <a class="" href="#">Trang Chủ</a>
+                            </li>
+                            <li class="link_menu">
+                                <a class="" href="#">Thiết kế wesbite</a>
+                            </li>
+                            <li class="link_menu">
+                                <a class="" href="#">Kiến thức</a>
+                            </li>
+                            <li class="link_menu">
+                                <a class="" href="#">Về Chúng tôi</a>
+                            </li>
+                            <li class="link_menu">
+                                <a class="" href="#">Liên Hệ</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <!-- button  -->
+                    <div class="btn-header tw-flex tw-items-center tw-gap-6">
+                        <a class="btn-main btn_header_border" href="">
+                            <span>076 8666 638</span>
+                        </a>
+                        <ion-icon onclick="onToggleMenu(this)" name="menu" class="tw-text-3xl tw-cursor-pointer md:tw-hidden"></ion-icon>
+                    </div>
+            </header>
+        </div>
+    </section>
+
+    <section class="section_welcome ">
+      <div class="tw-container tw-relative tw-min-h-[525px] tw-flex tw-items-center">
+         <div class="wrapper_welcome tw-relative tw-flex tw-flex-col tw-gap-y-[35px] tw-items-start">
+          <div class="list_content tw-flex tw-flex-col tw-gap-y-[18px]">
+            <div class="top_title ">
+              <h3 class="tw-text-primary tw-text-body16 tw-leading-6 !tw-font-bold tw-uppercase">CHÀO MỪNG ĐẾN VỚI QUATA AGENCY</h3>
             </div>
-            <div class="item flex items-center justify-between">
-              <div class="inner flex gap-2 items-center">
-                <div class="icon_phone flex-shrink-0">
-                  <svg
-                    class="w-4 md:w-full"
-                    width="20"
-                    height="21"
-                    viewBox="0 0 20 21"
-                    fill="none"
-                    xmlns="http://www.w3.org/2000/svg"
-                  >
-                    <path
-                      d="M19.4296 14.6327L15.0546 12.7577C14.8677 12.678 14.6599 12.6612 14.4627 12.7099C14.2654 12.7585 14.0893 12.8698 13.9608 13.0272L12.0233 15.3944C8.98248 13.9607 6.53535 11.5136 5.10165 8.47283L7.46888 6.5353C7.62657 6.40705 7.73818 6.23091 7.78681 6.03355C7.83545 5.8362 7.81846 5.62837 7.73842 5.44153L5.86338 1.06645C5.77554 0.865046 5.62016 0.700605 5.42406 0.601483C5.22796 0.502361 5.00341 0.474773 4.78915 0.523474L0.726575 1.46099C0.519997 1.50869 0.335688 1.62501 0.203728 1.79095C0.0717689 1.95689 -4.75872e-05 2.16266 2.36575e-08 2.37468C2.36575e-08 12.3944 8.12123 20.5 18.1253 20.5C18.3374 20.5001 18.5433 20.4284 18.7093 20.2964C18.8753 20.1644 18.9917 19.9801 19.0394 19.7734L19.9769 15.7109C20.0253 15.4955 19.9971 15.2701 19.8972 15.0733C19.7973 14.8765 19.632 14.7207 19.4296 14.6327Z"
-                      fill="#AD7314"
-                    />
-                  </svg>
-                </div>
-                <div
-                  class="phone text-primary font-semibold text-body16 md:text-h4"
-                >
-                  0123 456 789
-                </div>
-              </div>
-              <div
-                class="inner flex-1 flex flex-rows list_icon gap-10 ml-[62px]"
-              >
-                <div class="icon flex-1">
-                  <img src="img/social.svg" alt="" />
-                </div>
-                <div class="icon flex-1">
-                  <img src="img/social.svg" alt="" />
-                </div>
-                <div class="icon flex-1">
-                  <img src="img/social.svg" alt="" />
-                </div>
-                <div class="icon flex-1">
-                  <img src="img/social.svg" alt="" />
-                </div>
-              </div>
+            <div class="middle_title">
+              <h1>DỊCH VỤ THIẾT KẾ WEBSITE
+                CHUYÊN NGHIỆP - UY TÍN - GIÁ TỐT</h1>
             </div>
-          </div>
-          <hr class="text-neu6" />
-          <div class="main_menu relative w-full py-4">
-            <div class="inner_main_menu flex justify-between items-center">
-              <!-- Nhóm mục bên trái -->
-              <nav
-                class="hidden md:flex justify-between max-w-[456px] items-center space-x-4 flex-1"
-              >
-                <a class="link_menu" href="" title="Home">Home</a>
-                <a class="link_menu" href="" title="About Us">About Us</a>
-                <a class="link_menu" href="" title="Product">Product</a>
-                <a class="link_menu" href="" title="Gallery">Gallery</a>
-              </nav>
-
-              <!-- Logo opacity 0 để tạo khoảng trống -->
-              <div
-                class="hidden md:block logo-area h-11 max-w-[150px] opacity-0 flex-shrink-0 mx-auto z-10"
-              >
-                <a href="">
-                  <img src="/img/logo_hill.png" alt="Logo" class="" />
-                </a>
-              </div>
-              <!-- Logo thật ở giữa -->
-              <div
-                class="logo-area md:absolute md:left-1/2 md:top-1/2 md:transform md:-translate-x-1/2 md:-translate-y-[20%] z-10"
-              >
-                <a href="">
-                  <img
-                    src="/img/logo_hill.png"
-                    alt="Logo"
-                    class="max-w-[80px] md:max-w-[112px] lg:max-w-[126px] max-h-[126px]"
-                  />
-                </a>
-              </div>
-
-              <!-- Nhóm mục bên phải -->
-              <nav
-                class="hidden md:flex justify-between max-w-[456px] items-center space-x-3 flex-1"
-              >
-                <a class="link_menu" href="" title="Home">Article - News</a>
-
-                <a class="link_menu" href="" title="About Us">Contact</a>
-
-                <a class="btn btn-secondary" href="" title="">Get Started</a>
-              </nav>
-
-              <button
-                class="block md:hidden oy-3 px-4 mx-2 rounded-sm focus:outline-none hover:bg-primary hover:text-white group"
-              >
-                <div class="w-5 h-1 bg-neu2 mb-1"></div>
-                <div class="w-5 h-1 bg-neu2 mb-1"></div>
-                <div class="w-5 h-1 bg-neu2 mb-1"></div>
-                <div
-                  class="menu_mobile fixed top-0 -right-full h-screen w-8/12 bg-white border opacity-0 group-focus:right-0 group-focus:opacity-100 transition-all duration-300"
-                >
-                  <ul
-                    class="flex flex-col items-center w-full text-body18 cursor-pointer py-10"
-                  >
-                    <li>
-                      <a class="link_menu" href="" title="Home">Home</a>
-                    </li>
-                    <li>
-                      <a class="link_menu" href="" title="About Us">About Us</a>
-                    </li>
-                    <li>
-                      <a class="link_menu" href="" title="Product">Product</a>
-                    </li>
-                    <li>
-                      <a class="link_menu" href="" title="Gallery">Gallery</a>
-                    </li>
-                    <li>
-                      <a class="link_menu" href="" title="Home"
-                        >Article - News</a
-                      >
-                    </li>
-                    <li>
-                      <a class="link_menu" href="" title="About Us">Contact</a>
-                    </li>
-                    <li>
-                      <a class="btn btn-secondary" href="" title="">
-                        Get Started
-                      </a>
-                    </li>
-                  </ul>
-                </div>
-              </button>
+            <div class="bottom_title content_normal">
+              <h3>Với kinh nghiệm thực chiến trong nhiều lĩnh vực đội ngũ Quata Agency mang đến cho doanh nghiệp của bạn giải pháp tối ưu về thời gian lẫn ngân sách triển khai</h3>
             </div>
           </div>
-        </header>
+          <div class="box_button tw-flex tw-flex-row tw-gap-x-5">
+            <a class="btn_main_layout btn_main_yel btn_has_icon" href="">
+              <span>Giới Thiệu </span>
+              <svg width="7" height="13" viewBox="0 0 7 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M0.75 1.25L6 6.5L0.75 11.75" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+                
+            </a>
+            <a class="btn_main_layout btn_main_black" href="">
+              <span>Tư Vấn</span>
+            </a>
+
+          </div>
+         </div>
+         <div class="box_image_welcome tw-absolute">
+          <img class="tw-relative" src="./img/img_welcome.png" alt="">
+         </div>
       </div>
     </section>
-    <section class="layout-container">
-      <p class="mb-2">
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex cumque eos
-        non nulla pariatur molestias tempore veniam perferendis nihil! Obcaecati
-        odit odio omnis vitae? Tempora quos omnis earum perferendis labore?
-      </p>
-      <p class="mb-2">
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex cumque eos
-        non nulla pariatur molestias tempore veniam perferendis nihil! Obcaecati
-        odit odio omnis vitae? Tempora quos omnis earum perferendis labore?
-      </p>
-      <p class="mb-2">
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex cumque eos
-        non nulla pariatur molestias tempore veniam perferendis nihil! Obcaecati
-        odit odio omnis vitae? Tempora quos omnis earum perferendis labore?
-      </p>
-      <p class="mb-2">
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex cumque eos
-        non nulla pariatur molestias tempore veniam perferendis nihil! Obcaecati
-        odit odio omnis vitae? Tempora quos omnis earum perferendis labore?
-      </p>
-      <p class="mb-2">
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex cumque eos
-        non nulla pariatur molestias tempore veniam perferendis nihil! Obcaecati
-        odit odio omnis vitae? Tempora quos omnis earum perferendis labore?
-      </p>
-      <p class="mb-2">
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex cumque eos
-        non nulla pariatur molestias tempore veniam perferendis nihil! Obcaecati
-        odit odio omnis vitae? Tempora quos omnis earum perferendis labore?
-      </p>
+
+    <section class="section_benefits">
+      <div class="tw-container tw-relative tw-flex tw-justify-center tw-items-center">
+        <div class="wrapper_benefit tw-flex tw-flex-row tw-items-center">
+          <div class="col_left tw-mb-2 tw-max-w-[488px]">
+            <h2>NHỮNG LỢI ÍCH CỦA WEBSITE MANG LẠI CHO DOANH NGHIỆP</h2>
+            <p>Website không chỉ là một công cụ truyền thông trực tuyến mà còn là một phần không thể thiếu của mọi doanh nghiệp trong thời đại số hóa ngày nay. Một website chất lượng, doanh nghiệp có thể tận dụng nhiều lợi ích:</p>
+          </div>
+          <div class="col_right tw-grid tw-grid-cols-2 tw-gap-y-[80px] tw-gap-x-[108px]">
+              <div class="item tw-flex tw-flex-col tw-items-center tw-gap-y-[5px]">
+                <div class="icon tw-mb-[10px]">
+                  <img src="./img/loa.png" alt="">
+                </div>
+                <h3 class="title tw-text-h5 tw-uppercase">Quảng bá thương hiệu</h3>
+                <p class="content tw-text-center">Website là nơi trực tuyến giúp xây dựng và quảng bá thương hiệu của bạn, tạo ấn tượng mạnh mẽ trên Internet.</p>
+              </div>
+              <div class="item tw-flex tw-flex-col tw-items-center tw-gap-y-[5px]">
+                <div class="icon tw-mb-[10px]">
+                  <img src="./img/loa.png" alt="">
+                </div>
+                <h3 class="title tw-text-h5 tw-uppercase">Quảng bá thương hiệu</h3>
+                <p class="content tw-text-center">Website là nơi trực tuyến giúp xây dựng và quảng bá thương hiệu của bạn, tạo ấn tượng mạnh mẽ trên Internet.</p>
+              </div>
+              <div class="item tw-flex tw-flex-col tw-items-center tw-gap-y-[5px]">
+                <div class="icon tw-mb-[10px]">
+                  <img src="./img/loa.png" alt="">
+                </div>
+                <h3 class="title tw-text-h5 tw-uppercase">Quảng bá thương hiệu</h3>
+                <p class="content tw-text-center">Website là nơi trực tuyến giúp xây dựng và quảng bá thương hiệu của bạn, tạo ấn tượng mạnh mẽ trên Internet.</p>
+              </div>
+              <div class="item tw-flex tw-flex-col tw-items-center tw-gap-y-[5px]">
+                <div class="icon tw-mb-[10px]">
+                  <img src="./img/loa.png" alt="">
+                </div>
+                <h3 class="title tw-text-h5 tw-uppercase">Quảng bá thương hiệu</h3>
+                <p class="content tw-text-center">Website là nơi trực tuyến giúp xây dựng và quảng bá thương hiệu của bạn, tạo ấn tượng mạnh mẽ trên Internet.</p>
+              </div>
+          </div>
+        </div>
+
+        <div class="wrapper_img_polygon">
+          <img class="big_po" src="./img/Polygon_sm.svg" alt="">
+          <img class="small_po" src="./img/Polygon_sm.svg" alt="">
+        </div>
+      </div>
     </section>
-    <section class="layout-container">
-      <p class="mb-2">
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex cumque
-        eosádasd non nulla pariatur molestias tempore veniam perferendis nihil!
-        Obcaecatiádasd odit odio omnis vitae? Tempora quos omnis earum
-        perferendis labore?ádasdasasdasdasdasd
-      </p>
-      <p class="mb-2">
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex cumque eos
-        non nulla pariatur molestias tempore veniam perferendis nihil! Obcaecati
-        odit odio omnis vitae? Tempora quos omnis earum perferendis labore?
-      </p>
-      <p class="mb-2">
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex cumque eos
-        non nulla pariatur molestias tempore veniam perferendis nihil! Obcaecati
-        odit odio omnis vitae? Tempora quos omnis earum perferendis labore?
-      </p>
-      <p class="mb-2">
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex cumque eos
-        non nulla pariatur molestias tempore veniam perferendis nihil! Obcaecati
-        odit odio omnis vitae? Tempora quos omnis earum perferendis labore?
-      </p>
-      <p class="mb-2">
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex cumque eos
-        non nulla pariatur molestias tempore veniam perferendis nihil! Obcaecati
-        odit odio omnis vitae? Tempora quos omnis earum perferendis labore?
-      </p>
-      <p class="mb-2">
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex cumque eos
-        non nulla pariatur molestias tempore veniam perferendis nihil! Obcaecati
-        odit odio omnis vitae? Tempora quos omnis earum perferendis labore?
-      </p>
-      <p class="mb-2">mẫuuu</p>
+
+    <section class="section_our_services">
+      <div class="tw-container tw-relative tw-flex tw-justify-center tw-items-center">
+        <img src="" alt="">
+        <div class="wrapper_our_ser tw-flex tw-flex-col tw-items-center tw-gap-y-10">
+         <div class="title_ser tw-flex tw-flex-col tw-items-center">
+          <h2 class="title tw-mb-2">GIÁ TRỊ DỊCH VỤ CỦA CHÚNG TÔI</h2>
+          <p>Đội ngũ của Quata Agency mang đến sự hài lòng trong từng dịch vụ.</p>
+         </div>
+
+         <div class="list_item tw-grid tw-grid-cols-2 tw-gap-y-7 tw-gap-x-8">
+          <div class="item tw-relative p-[10px]">
+           <div class="inner_item">
+            <div class="item-image tw-relative">
+              <svg width="57" height="57" viewBox="0 0 51 57" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path opacity="0.2" d="M25.5 0L50.1817 14.25V42.75L25.5 57L0.818275 42.75V14.25L25.5 0Z" fill="url(#paint0_linear_10227_1149)"/>
+                <defs>
+                <linearGradient id="paint0_linear_10227_1149" x1="54" y1="32.2174" x2="4.27476" y2="11.2486" gradientUnits="userSpaceOnUse">
+                <stop stop-color="#FFDB01"/>
+                <stop offset="1" stop-color="#F4A419"/>
+                </linearGradient>
+                </defs>
+                </svg>
+              <img class="tw-absolute" src="./img/shuttle 1.svg" alt="" class="item-img">
+            </div>
+            <div class="item-content">
+              <h3 class="item-title">Tối ưu thời gian & Chi phí</h3>
+              <p class="item-text">Đặt mình vào vị trí của khách hàng, chúng tôi thấu hiểu việc rút ngắn thời gian triển khai để tối ưu chi phí là một trong các tiêu chí chính ảnh hưởng đến kết quả thành công của từng chiến lược, từng giai đoạn.</p>
+            </div>
+           </div>
+          </div>
+          <div class="item tw-relative p-[10px]">
+            <div class="inner_item">
+             <div class="item-image tw-relative">
+               <svg width="57" height="57" viewBox="0 0 51 57" fill="none" xmlns="http://www.w3.org/2000/svg">
+                 <path opacity="0.2" d="M25.5 0L50.1817 14.25V42.75L25.5 57L0.818275 42.75V14.25L25.5 0Z" fill="url(#paint0_linear_10227_1149)"/>
+                 <defs>
+                 <linearGradient id="paint0_linear_10227_1149" x1="54" y1="32.2174" x2="4.27476" y2="11.2486" gradientUnits="userSpaceOnUse">
+                 <stop stop-color="#FFDB01"/>
+                 <stop offset="1" stop-color="#F4A419"/>
+                 </linearGradient>
+                 </defs>
+                 </svg>
+               <img class="tw-absolute" src="./img/shuttle 1.svg" alt="" class="item-img">
+             </div>
+             <div class="item-content">
+               <h3 class="item-title">Tối ưu thời gian & Chi phí</h3>
+               <p class="item-text">Đặt mình vào vị trí của khách hàng, chúng tôi thấu hiểu việc rút ngắn thời gian triển khai để tối ưu chi phí là một trong các tiêu chí chính ảnh hưởng đến kết quả thành công của từng chiến lược, từng giai đoạn.</p>
+             </div>
+            </div>
+           </div>
+           <div class="item tw-relative p-[10px]">
+            <div class="inner_item">
+             <div class="item-image tw-relative">
+               <svg width="57" height="57" viewBox="0 0 51 57" fill="none" xmlns="http://www.w3.org/2000/svg">
+                 <path opacity="0.2" d="M25.5 0L50.1817 14.25V42.75L25.5 57L0.818275 42.75V14.25L25.5 0Z" fill="url(#paint0_linear_10227_1149)"/>
+                 <defs>
+                 <linearGradient id="paint0_linear_10227_1149" x1="54" y1="32.2174" x2="4.27476" y2="11.2486" gradientUnits="userSpaceOnUse">
+                 <stop stop-color="#FFDB01"/>
+                 <stop offset="1" stop-color="#F4A419"/>
+                 </linearGradient>
+                 </defs>
+                 </svg>
+               <img class="tw-absolute" src="./img/shuttle 1.svg" alt="" class="item-img">
+             </div>
+             <div class="item-content">
+               <h3 class="item-title">Tối ưu thời gian & Chi phí</h3>
+               <p class="item-text">Đặt mình vào vị trí của khách hàng, chúng tôi thấu hiểu việc rút ngắn thời gian triển khai để tối ưu chi phí là một trong các tiêu chí chính ảnh hưởng đến kết quả thành công của từng chiến lược, từng giai đoạn.</p>
+             </div>
+            </div>
+           </div>
+           <div class="item tw-relative p-[10px]">
+            <div class="inner_item">
+             <div class="item-image tw-relative">
+               <svg width="57" height="57" viewBox="0 0 51 57" fill="none" xmlns="http://www.w3.org/2000/svg">
+                 <path opacity="0.2" d="M25.5 0L50.1817 14.25V42.75L25.5 57L0.818275 42.75V14.25L25.5 0Z" fill="url(#paint0_linear_10227_1149)"/>
+                 <defs>
+                 <linearGradient id="paint0_linear_10227_1149" x1="54" y1="32.2174" x2="4.27476" y2="11.2486" gradientUnits="userSpaceOnUse">
+                 <stop stop-color="#FFDB01"/>
+                 <stop offset="1" stop-color="#F4A419"/>
+                 </linearGradient>
+                 </defs>
+                 </svg>
+               <img class="tw-absolute" src="./img/shuttle 1.svg" alt="" class="item-img">
+             </div>
+             <div class="item-content">
+               <h3 class="item-title">Tối ưu thời gian & Chi phí</h3>
+               <p class="item-text">Đặt mình vào vị trí của khách hàng, chúng tôi thấu hiểu việc rút ngắn thời gian triển khai để tối ưu chi phí là một trong các tiêu chí chính ảnh hưởng đến kết quả thành công của từng chiến lược, từng giai đoạn.</p>
+             </div>
+            </div>
+           </div>
+         </div>
+        </div>
+      </div>
     </section>
-  </body>
+
+</body>
+
 </html>

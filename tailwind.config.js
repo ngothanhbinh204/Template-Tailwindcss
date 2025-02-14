@@ -1,35 +1,41 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
+  prefix: "tw-", // Thêm tiền tố tw-
   content: [
-    "./index.html", // Đảm bảo quét các file HTML trong thư mục gốc
-    "./src/**/*.{js,ts,jsx,tsx}", // Quét các file JavaScript và TypeScript trong thư mục src
+    "./index.html",
+    "./src/**/*.{js,ts,jsx,tsx}",
+    "./components/**/*.{js,ts,jsx,tsx}"
   ],
   theme: {
     extend: {
       screens: {
         sm: "640px", // Mobile nhỏ
-        md: "850px", // Tablet
+        md: "768px", // Tablet
         lg: "1024px", // Laptop nhỏ
-        xl: "1280px", // Desktop
+        xl: "1280", // Desktop
         "2xl": "1536px", // Màn hình lớn
       },
       container: {
         center: true, // Đảm bảo container luôn căn giữa
         padding: {
-          DEFAULT: "10px", // Padding mặc định
-          sm: "10px", // Padding cho màn hình nhỏ
-          md: "10px", // Padding cho màn hình trung bình
-          lg: "10px", // Padding cho màn hình lớn
-          xl: "10px", // Padding cho màn hình rất lớn
-          "2xl": "10px", // Padding cho màn hình cực lớn
+          DEFAULT: "1rem", // Padding mặc định
+          // sm: "1rem",  // Padding cho màn hình nhỏ
+          // md: "2rem",  // Padding cho màn hình trung bình
+          // lg: "80px",  // Padding cho màn hình lớn
+          // xl: "80px",  // Padding cho màn hình rất lớn
+          // "2xl": "80px", // Padding cho màn hình cực lớn 
         },
+      },
+      maxWidth: {
+        container: "1312px", // Kích thước tối đa của container
       },
       fontFamily: {
         sans: ["Inter", "sans-serif"], // Thêm font Inter vào font mặc định
       },
       colors: {
-        primary: "#AD7314", // Màu chính
-        muted: "#6B7280",
+        primary: "rgb(245, 164, 24)", // Màu chính
+        secondary: "rgb(255, 217, 0)",
+        black: "rgba(0, 0, 0, 1)",
         neu0: "#333333",
         neu1: "#545454",
         neu2: "#6e6e73",
@@ -41,8 +47,8 @@ module.exports = {
         neu444: "#444444",
       },
       fontSize: {
-        h1: ["40px", { lineHeight: "150%", fontWeight: "700" }],
-        h2: ["38px", { lineHeight: "150%", fontWeight: "700" }],
+        h1: ["36px", { lineHeight: "150%", fontWeight: "700" }],
+        h2: ["28px", { lineHeight: "150%", fontWeight: "700" }],
         h3: ["20px", { lineHeight: "150%", fontWeight: "600" }],
         h4: ["18px", { lineHeight: "150%", fontWeight: "600" }],
         h5: ["14px", { lineHeight: "150%", fontWeight: "600" }],
@@ -50,7 +56,7 @@ module.exports = {
         body18: ["18px", { lineHeight: "150%", fontWeight: "400" }],
         body16: ["16px", { lineHeight: "150%", fontWeight: "400" }],
         body12: ["12px", { lineHeight: "150%", fontWeight: "400" }],
-        body: ["14px", { lineHeight: "150%", fontWeight: "400" }],
+        bodymain: ["14px", { lineHeight: "150%", fontWeight: "400" }],
         small: ["12px", { lineHeight: "150%", fontWeight: "400" }],
       },
       boxShadow: {
