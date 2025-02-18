@@ -72,7 +72,6 @@ body {
 
   .custom_btn_prev:hover,
   .custom_btn_next:hover {
-    /* background: rgba(0, 0, 0, 0.8); */
     box-shadow: 0px 0px 4px 3px rgba(37, 37, 37, 0.25);
 
   }
@@ -173,20 +172,37 @@ body {
   /* end header  */
 
   .btn_main_yel {
-    @apply tw-text-body18 tw-leading-[27px] tw-bg-yellow-400 tw-text-black tw-font-bold tw-px-6 tw-py-3 tw-rounded-md tw-flex tw-items-center tw-gap-2 tw-transition tw-duration-300;
+    font-size: 18px;
+    line-height: 150%;
+    font-weight: 400;
+    line-height: 27px;
+    color: rgba(0, 0, 0, 1);
+    font-weight: 700;
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+    padding-top: 0.75rem;
+    padding-bottom: 0.75rem;
+    border-radius: 0.375rem;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    transition-property: color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, backdrop-filter;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    transition-duration: 150ms;
+    transition-duration: 300ms;
     background: linear-gradient(292.86deg, #FFDB01 12.9%, #F4A419 85.17%);
 
   }
 
-  .btn_main_black {
+  /* .btn_main_black {
     @apply tw-bg-black tw-text-white tw-font-bold tw-px-6 tw-py-3 tw-rounded-md tw-flex tw-items-center tw-justify-center tw-transition tw-duration-300 hover:tw-bg-gray-800;
-  }
+  } */
 
   /* 
   .btn_has_icon svg {
     @apply tw-w-4 tw-h-4 tw-transition tw-duration-300 tw-stroke-black group-hover:tw-stroke-primary;
   } */
-
+  /* 
   .layout-container {
     @apply tw-flex tw-flex-col tw-items-center tw-justify-center tw-gap-10 tw-px-16 tw-py-20 tw-bg-white;
     margin: 0 auto;
@@ -197,7 +213,71 @@ body {
 
   .btn-primary {
     @apply tw-bg-primary tw-uppercase tw-text-body16 tw-font-bold tw-shadow-shadow2 tw-leading-leading_btn tw-text-white tw-px-6 tw-py-3 tw-hover:opacity-80 tw-transition tw-duration-300;
+  } */
+
+  .btn_main_black {
+    background-color: black;
+    color: white;
+    font-weight: bold;
+    padding: 12px 24px;
+    border-radius: 6px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: background-color 0.3s;
   }
+
+  .btn_main_black:hover {
+    background-color: #374151;
+    /* Màu gray-800 */
+  }
+
+  /*  
+.btn_has_icon svg {
+    width: 16px;
+    height: 16px;
+    transition: stroke 0.3s;
+    stroke: black;
+}
+
+.group:hover .btn_has_icon svg {
+    stroke: var(--primary-color);
+}
+*/
+
+  .layout-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 40px;
+    padding: 80px 64px;
+    background-color: white;
+    margin: 0 auto;
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+
+  .btn_has_icon svg {
+    /* Nếu có CSS cho SVG thì thêm vào đây */
+  }
+
+  .btn-primary {
+    background-color: var(--primary-color);
+    text-transform: uppercase;
+    font-size: 16px;
+    font-weight: bold;
+    box-shadow: var(--shadow2);
+    line-height: var(--leading-btn);
+    color: white;
+    padding: 12px 24px;
+    transition: opacity 0.3s;
+  }
+
+  .btn-primary:hover {
+    opacity: 0.8;
+  }
+
 
   .header {
     min-height: 120px;
@@ -219,9 +299,21 @@ body {
     background: rgba(255, 255, 255, 0.5);
   }
 
-  .btn_main {
+  /* .btn_main {
     @apply tw-text-body18 tw-flex tw-justify-center tw-items-end tw-py-3 tw-px-6 tw-uppercase tw-leading-[27px] tw-text-black
+  } */
+
+  .btn_main {
+    font-size: 18px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    padding: 12px 24px;
+    text-transform: uppercase;
+    line-height: 27px;
+    color: black;
   }
+
 
   .btn_has_icon {
     display: flex;
@@ -1171,6 +1263,7 @@ body {
   .timeline-item.active p {
     opacity: 1;
     transform: translateY(0);
+    margin-bottom: 0px;
   }
 
   .box_infocontact {

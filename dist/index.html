@@ -4,21 +4,18 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Tailwind CSS with Vite</title>
-
-
+  <title>Tailwind CSS with Vite</title>
+  <link rel="stylesheet" href="./dist/output.css" />
 
   <!-- jQuery trước -->
-  <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+  <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+  <script src="./swiper/swiper-bundle.min.js"></script>
+  <script src="./scrollTrigger/gsap.min.js"></script>
 
-
-  <script src="../swiper/swiper-bundle.min.js"></script>
-  <script src="../scrollTrigger/gsap.min.js"></script>
-
-  <script src="../aos/aos.js"></script>
-  <script src="../scrollTrigger/gsap.min.js"></script>
-  <script src="../scrollTrigger/ScrollTrigger.min.js"></script>
-  <script src="../src/main.js"></script>
+  <script src="./aos/aos.js"></script>
+  <script src="./scrollTrigger/gsap.min.js"></script>
+  <script src="./scrollTrigger/ScrollTrigger.min.js"></script>
+  <script src="./src/main.js"></script>
 
 
 
@@ -35,158 +32,87 @@
   <link rel="stylesheet" data-pmdelayedstyle="https://fastly.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"
     href="https://fastly.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css">
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet" />
-  <link rel="stylesheet" crossorigin href="./assets/index-Hb3G-1ir.css">
+  <link rel="stylesheet" crossorigin href="/assets/index-BhmiWbeM.css">
 </head>
 
 <body class="tw-font-sans">
-  <!-- <section class="section_header tw-sticky tw-top-0 tw-left-0 tw-w-full tw-z-50 tw-bg-white">
+  <section class="section_header tw-sticky tw-top-0 tw-left-0 tw-w-full tw-z-50 tw-bg-white">
     <div class="tw-container tw-max-w-container">
-      <header class="header tw-grid tw-bg-white tw-my-auto">
-        <nav class="tw-flex tw-justify-between tw-items-center">
-          <div>
-            <img class="tw-cursor-pointer" src="./img/LOGO QUATA 1.svg" alt="...">
+
+    </div>
+  </section>
+
+
+
+
+
+
+  <section class="section_welcome tw-mt-5">
+    <div class="tw-container tw-max-w-screen-2xl tw-overflow-x-clip tw-px-0">
+      <div
+        class="tw-container tw-px-0 md:tw-px-6 tw-gap-y-0 tw-max-w-container tw-relative tw-flex tw-flex-col md:tw-flex-row tw-items-center md:tw-items-center  ">
+        <img class="polygon_8 po_1 tw-absolute" src="data:image/svg+xml,%3csvg%20width='42'%20height='43'%20viewBox='0%200%2042%2043'%20fill='none'%20xmlns='http://www.w3.org/2000/svg'%3e%3cpath%20d='M16.5189%200.673238L36.9482%207.57022L41.1899%2028.711L25.0023%2042.9548L4.57302%2036.0578L0.331339%2014.917L16.5189%200.673238Z'%20fill='url(%23paint0_linear_10102_260)'/%3e%3cdefs%3e%3clinearGradient%20id='paint0_linear_10102_260'%20x1='42.4547'%20y1='20.3298'%20x2='2.4486'%20y2='12.1762'%20gradientUnits='userSpaceOnUse'%3e%3cstop%20stop-color='%23FFDB01'/%3e%3cstop%20offset='1'%20stop-color='%23F4A419'/%3e%3c/linearGradient%3e%3c/defs%3e%3c/svg%3e" alt="">
+        <div
+          class="wrapper_welcome tw-flex-none tw-px-6 md:tw-px-0 tw-max-w-full md:tw-max-w-[520px] lg:tw-max-w-[648px] tw-relative tw-flex tw-flex-col tw-gap-y-4 lg:tw-gap-y-[35px] tw-items-start">
+          <div class="list_content tw-flex tw-flex-col tw-gap-y-[10px] md:tw-gap-y-[18px]">
+            <div class="top_title tw-text-primary ">
+              <h3 class="">CHÀO MỪNG ĐẾN
+                VỚI QUATA AGENCY</h3>
+            </div>
+            <div class="middle_title">
+              <h1><span class="tw-block">DỊCH VỤ THIẾT KẾ WEBSITE</span>
+                CHUYÊN NGHIỆP - UY TÍN - GIÁ TỐT</h1>
+            </div>
+            <div class="bottom_title content_normal">
+              <h3>Với kinh nghiệm thực chiến trong nhiều lĩnh vực đội ngũ Quata Agency mang đến cho doanh
+                nghiệp của bạn giải pháp tối ưu về thời gian lẫn ngân sách triển khai</h3>
+            </div>
           </div>
-          <div
-            class="nav-links tw-text-body16 tw-duration-500 md:tw-static tw-absolute tw-bg-white md:tw-min-h-fit tw-min-h-[60vh] tw-left-0 tw-top-[-100%] md:tw-w-auto tw-w-full tw-flex tw-items-center tw-px-5">
-            <ul class="tw-flex md:tw-flex-row tw-flex-col md:tw-items-center md:tw-gap-[20px] tw-gap-8">
-              <li class="link_menu">
-                <a class="" href="#">Trang Chủ</a>
-              </li>
-              <li class="link_menu">
-                <a class="" href="#">Thiết kế wesbite</a>
-              </li>
-              <li class="link_menu">
-                <a class="" href="#">Kiến thức</a>
-              </li>
-              <li class="link_menu">
-                <a class="" href="#">Về Chúng tôi</a>
-              </li>
-              <li class="link_menu">
-                <a class="" href="#">Liên Hệ</a>
-              </li>
-            </ul>
-          </div>
-          <div class="btn-header tw-flex tw-items-center tw-gap-6">
-            <a class="btn-main btn_header_border" href="">
-              <span>076 8666 638</span>
+          <div class="box_button tw-flex tw-flex-row tw-gap-x-5 tw-gap-y-4 tw-flex-wrap">
+            <a class="btn_main_layout btn_main_yel btn_has_icon" href="">
+              <span>Giới Thiệu </span>
+              <svg width="7" height="13" viewBox="0 0 7 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M0.75 1.25L6 6.5L0.75 11.75" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"
+                  stroke-linejoin="round" />
+              </svg>
+
             </a>
-            <ion-icon onclick="onToggleMenu(this)" name="menu"
-              class="tw-text-3xl tw-cursor-pointer md:tw-hidden"></ion-icon>
-          </div>
-      </header>
-    </div>
-  </section> -->
+            <a class="btn_main_layout btn_main_black" href="">
+              <span>Tư Vấn</span>
+            </a>
 
-  <header id="masthead" class="site-header">
-    <div class="container">
-      <div class="row">
-        <div class="col-md-12">
-          <div class="wrap-header">
-            <div class="site-branding">
-              <a href="/" rel="home">
-                <img src="logo.png" alt="Logo">
-              </a>
-              <h1 class="site-title">
-                <a href="/" rel="home">Tên Website</a>
-              </h1>
-              <p class="site-description">Mô tả ngắn gọn về website</p>
-            </div><!-- .site-branding -->
-
-            <nav id="site-navigation" class="main-navigation">
-              <div class="box-menu">
-                <div class="header-mobile">
-                  <div class="logo-mobile site-branding">
-                    <a href="/" rel="home">
-                      <img src="logo.png" alt="Logo">
-                    </a>
-                  </div>
-                  <div class="content-right">
-                    <a href="#" class="button-main">Đăng ký ngay</a>
-                    <div class="menu-toggle-custom">
-                      <div class="icon-toggle"></div>
-                    </div>
-                  </div>
-                </div>
-
-                <ul id="primary-menu">
-                  <li><a href="#">Trang chủ</a></li>
-                  <li><a href="#">Giới thiệu</a></li>
-                  <li><a href="#">Dịch vụ</a></li>
-                  <li><a href="#">Tin tức</a></li>
-                  <li><a href="#">Liên hệ</a></li>
-                </ul>
-              </div>
-
-              <a href="#" class="button-main">Đăng ký ngay</a>
-              <div class="menu-toggle-custom">
-                <div class="icon-toggle"></div>
-              </div>
-            </nav><!-- #site-navigation -->
-
-          </div>
-
-        </div>
-      </div>
-    </div>
-  </header>
-
-
-
-
-
-  <section class="section_welcome">
-    <div class="tw-container tw-max-w-container tw-relative tw-min-h-[525px] tw-flex tw-items-center">
-      <div class="wrapper_welcome tw-relative tw-flex tw-flex-col tw-gap-y-[35px] tw-items-start">
-        <div class="list_content tw-flex tw-flex-col tw-gap-y-[18px]">
-          <div class="top_title ">
-            <h3 class="tw-text-primary tw-text-body16 tw-leading-6 !tw-font-bold tw-uppercase">CHÀO MỪNG ĐẾN
-              VỚI QUATA AGENCY</h3>
-          </div>
-          <div class="middle_title">
-            <h1>DỊCH VỤ THIẾT KẾ WEBSITE
-              CHUYÊN NGHIỆP - UY TÍN - GIÁ TỐT</h1>
-          </div>
-          <div class="bottom_title content_normal">
-            <h3>Với kinh nghiệm thực chiến trong nhiều lĩnh vực đội ngũ Quata Agency mang đến cho doanh
-              nghiệp của bạn giải pháp tối ưu về thời gian lẫn ngân sách triển khai</h3>
           </div>
         </div>
-        <div class="box_button tw-flex tw-flex-row tw-gap-x-5">
-          <a class="btn_main_layout btn_main_yel btn_has_icon" href="">
-            <span>Giới Thiệu </span>
-            <svg width="7" height="13" viewBox="0 0 7 13" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <path d="M0.75 1.25L6 6.5L0.75 11.75" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"
-                stroke-linejoin="round" />
-            </svg>
+        <div class="box_image_welcome ">
+          <img class="tw-relative" src="/assets/237-Cd3RYGiJ.png" alt="">
+          <img class="polygon_8 po_2 tw-absolute" src="data:image/svg+xml,%3csvg%20width='42'%20height='43'%20viewBox='0%200%2042%2043'%20fill='none'%20xmlns='http://www.w3.org/2000/svg'%3e%3cpath%20d='M16.5189%200.673238L36.9482%207.57022L41.1899%2028.711L25.0023%2042.9548L4.57302%2036.0578L0.331339%2014.917L16.5189%200.673238Z'%20fill='url(%23paint0_linear_10102_260)'/%3e%3cdefs%3e%3clinearGradient%20id='paint0_linear_10102_260'%20x1='42.4547'%20y1='20.3298'%20x2='2.4486'%20y2='12.1762'%20gradientUnits='userSpaceOnUse'%3e%3cstop%20stop-color='%23FFDB01'/%3e%3cstop%20offset='1'%20stop-color='%23F4A419'/%3e%3c/linearGradient%3e%3c/defs%3e%3c/svg%3e" alt="">
 
-          </a>
-          <a class="btn_main_layout btn_main_black" href="">
-            <span>Tư Vấn</span>
-          </a>
 
+          <img class="polygon_8 po_3 tw-absolute" src="data:image/svg+xml,%3csvg%20width='42'%20height='43'%20viewBox='0%200%2042%2043'%20fill='none'%20xmlns='http://www.w3.org/2000/svg'%3e%3cpath%20d='M16.5189%200.673238L36.9482%207.57022L41.1899%2028.711L25.0023%2042.9548L4.57302%2036.0578L0.331339%2014.917L16.5189%200.673238Z'%20fill='url(%23paint0_linear_10102_260)'/%3e%3cdefs%3e%3clinearGradient%20id='paint0_linear_10102_260'%20x1='42.4547'%20y1='20.3298'%20x2='2.4486'%20y2='12.1762'%20gradientUnits='userSpaceOnUse'%3e%3cstop%20stop-color='%23FFDB01'/%3e%3cstop%20offset='1'%20stop-color='%23F4A419'/%3e%3c/linearGradient%3e%3c/defs%3e%3c/svg%3e" alt="">
         </div>
-      </div>
-      <div class="box_image_welcome tw-absolute">
-        <img class="tw-relative" src="/assets/237-Cd3RYGiJ.png" alt="">
+
+
+
       </div>
     </div>
   </section>
 
   <section class="section_benefits">
     <div class="tw-container tw-relative tw-flex tw-justify-center tw-items-center">
-      <div class="wrapper_benefit tw-flex tw-flex-row tw-items-center">
-        <div class="col_left tw-mb-2 tw-max-w-[488px]">
+      <div
+        class="wrapper_benefit tw-gap-y-[50px] tw-flex tw-flex-col lg:tw-flex-row tw-items-center tw-justify-between">
+        <div class="col_left tw-mb-2 tw-max-w-[280px] md:tw-max-w-[350px] lg:tw-max-w-[488px]">
           <h2>NHỮNG LỢI ÍCH CỦA WEBSITE MANG LẠI CHO DOANH NGHIỆP</h2>
           <p>Website không chỉ là một công cụ truyền thông trực tuyến mà còn là một phần không thể thiếu của
             mọi doanh nghiệp trong thời đại số hóa ngày nay. Một website chất lượng, doanh nghiệp có thể tận
             dụng nhiều lợi ích:</p>
         </div>
-        <div class="col_right tw-grid tw-grid-cols-2 tw-gap-y-[80px] tw-gap-x-[108px]">
+        <div class="col_right tw-max-w-[521px] tw-grid tw-grid-cols-2">
           <div class="item tw-flex tw-flex-col tw-items-center tw-gap-y-[5px]">
             <div class="icon tw-mb-[10px]">
               <img src="/assets/loa-DwMDlRKh.png" alt="">
             </div>
-            <h3 class="title tw-text-h5 tw-uppercase">Quảng bá thương hiệu</h3>
+            <h3 class="title tw-uppercase tw-text-center">Quảng bá thương hiệu</h3>
             <p class="content tw-text-center">Website là nơi trực tuyến giúp xây dựng và quảng bá thương
               hiệu của bạn, tạo ấn tượng mạnh mẽ trên Internet.</p>
           </div>
@@ -194,7 +120,7 @@
             <div class="icon tw-mb-[10px]">
               <img src="/assets/loa-DwMDlRKh.png" alt="">
             </div>
-            <h3 class="title tw-text-h5 tw-uppercase">Quảng bá thương hiệu</h3>
+            <h3 class="title tw-uppercase tw-text-center">Quảng bá thương hiệu</h3>
             <p class="content tw-text-center">Website là nơi trực tuyến giúp xây dựng và quảng bá thương
               hiệu của bạn, tạo ấn tượng mạnh mẽ trên Internet.</p>
           </div>
@@ -202,16 +128,15 @@
             <div class="icon tw-mb-[10px]">
               <img src="/assets/loa-DwMDlRKh.png" alt="">
             </div>
-            <h3 class="title tw-text-h5 tw-uppercase">Quảng bá thương hiệu</h3>
-            <p class="content tw-text-center">Đội ngũ chăm sóc khách hàng luôn luôn lắng nghe, tiếp nhận thông tin của
-              khách hàng để kịp thời xử lý. Chúng tôi theo gót khách hàng từ giai đoạn ban đầu tiếp cận, trong suốt thời
-              gian triển khai, đến sau khi vận hành dõi theo từng chặng đường thành công của khách hàng.</p>
+            <h3 class="title tw-uppercase tw-text-center">Quảng bá thương hiệu</h3>
+            <p class="content tw-text-center">Website cho phép khách hàng truy cập thông tin, sản phẩm và dịch vụ của
+              bạn bất cứ lúc nào, 24/7, làm tăng tính tiện lợi.</p>
           </div>
           <div class="item tw-flex tw-flex-col tw-items-center tw-gap-y-[5px]">
             <div class="icon tw-mb-[10px]">
               <img src="/assets/loa-DwMDlRKh.png" alt="">
             </div>
-            <h3 class="title tw-text-h5 tw-uppercase">Quảng bá thương hiệu</h3>
+            <h3 class="title tw-uppercase tw-text-center">Quảng bá thương hiệu</h3>
             <p class="content tw-text-center">Website là nơi trực tuyến giúp xây dựng và quảng bá thương
               hiệu của bạn, tạo ấn tượng mạnh mẽ trên Internet.</p>
           </div>
@@ -219,141 +144,151 @@
       </div>
 
       <div class="wrapper_img_polygon">
-        <img class="big_po"
-          src="data:image/svg+xml,%3csvg%20width='270'%20height='310'%20viewBox='0%200%20270%20310'%20fill='none'%20xmlns='http://www.w3.org/2000/svg'%3e%3cpath%20d='M1.26607%2077.7887L135%200.57735L268.734%2077.7887V232.211L135%20309.423L1.26607%20232.211V77.7887Z'%20stroke='url(%23paint0_linear_10076_154)'/%3e%3cdefs%3e%3clinearGradient%20id='paint0_linear_10076_154'%20x1='290'%20y1='175.217'%20x2='19.5645'%20y2='61.1768'%20gradientUnits='userSpaceOnUse'%3e%3cstop%20stop-color='%23FFDB01'/%3e%3cstop%20offset='1'%20stop-color='%23F4A419'/%3e%3c/linearGradient%3e%3c/defs%3e%3c/svg%3e"
-          alt="">
-        <img class="small_po"
-          src="data:image/svg+xml,%3csvg%20width='270'%20height='310'%20viewBox='0%200%20270%20310'%20fill='none'%20xmlns='http://www.w3.org/2000/svg'%3e%3cpath%20d='M1.26607%2077.7887L135%200.57735L268.734%2077.7887V232.211L135%20309.423L1.26607%20232.211V77.7887Z'%20stroke='url(%23paint0_linear_10076_154)'/%3e%3cdefs%3e%3clinearGradient%20id='paint0_linear_10076_154'%20x1='290'%20y1='175.217'%20x2='19.5645'%20y2='61.1768'%20gradientUnits='userSpaceOnUse'%3e%3cstop%20stop-color='%23FFDB01'/%3e%3cstop%20offset='1'%20stop-color='%23F4A419'/%3e%3c/linearGradient%3e%3c/defs%3e%3c/svg%3e"
-          alt="">
+        <img class="big_po" src="data:image/svg+xml,%3csvg%20width='583'%20height='459'%20viewBox='0%200%20583%20459'%20fill='none'%20xmlns='http://www.w3.org/2000/svg'%3e%3cg%20opacity='0.6'%3e%3cpath%20d='M31.2472%20115.039L229.5%200.57735L427.753%20115.039V343.961L229.5%20458.423L31.2472%20343.961V115.039Z'%20stroke='url(%23paint0_linear_130_1901)'/%3e%3cpath%20d='M294.266%20206.789L428%20129.577L561.734%20206.789V361.211L428%20438.423L294.266%20361.211V206.789Z'%20stroke='url(%23paint1_linear_130_1901)'/%3e%3c/g%3e%3cdefs%3e%3clinearGradient%20id='paint0_linear_130_1901'%20x1='459'%20y1='259.435'%20x2='58.581'%20y2='90.5812'%20gradientUnits='userSpaceOnUse'%3e%3cstop%20stop-color='%23FFDB01'/%3e%3cstop%20offset='1'%20stop-color='%23F4A419'/%3e%3c/linearGradient%3e%3clinearGradient%20id='paint1_linear_130_1901'%20x1='583'%20y1='304.217'%20x2='312.564'%20y2='190.177'%20gradientUnits='userSpaceOnUse'%3e%3cstop%20stop-color='%23FFDB01'/%3e%3cstop%20offset='1'%20stop-color='%23F4A419'/%3e%3c/linearGradient%3e%3c/defs%3e%3c/svg%3e" alt="">
+        <!-- <img class="small_po" src="./img/Polygon_sm.svg" alt=""> -->
       </div>
     </div>
   </section>
 
-  <section class="section_our_services tw-pt-[90px] tw-pb-[60px]">
-    <div class="tw-container !tw-max-w-screen-2xl tw-relative tw-flex tw-justify-end tw-items-center !tw-p-0">
-      <div class="box_bannerourser tw-absolute">
+  <section class="section_our_services ">
+    <div
+      class="tw-container !tw-max-w-screen-2xl tw-relative tw-flex tw-flex-col-reverse lg:tw-flex-row tw-justify-end tw-items-center lg:!tw-p-0 lg:!tw-pb-[60px]">
+      <div class="box_bannerourser tw-relative lg:tw-absolute">
         <img class="img_h_our_ser" src="/assets/337-rX-T1xAL.png" alt="">
 
       </div>
-      <div class="bg_wrapper">
-        <div class="wrapper_our_ser tw-relative tw-flex tw-flex-col tw-items-center tw-gap-y-10">
-          <div class="title_ser tw-flex tw-flex-col tw-items-center">
-            <h2 class="title tw-mb-2">GIÁ TRỊ DỊCH VỤ CỦA CHÚNG TÔI</h2>
-            <p class="tw-text-body16">Đội ngũ của Quata Agency mang đến sự hài lòng trong từng dịch vụ.</p>
-          </div>
+      <div class="wrapper_ourser">
 
-          <div class="list_item tw-grid tw-grid-cols-2 tw-gap-y-7 tw-gap-x-8">
-            <div class="item tw-relative p-[10px]">
-              <div class="inner_item">
-                <div class="item-image tw-relative">
-                  <svg width="57" height="57" viewBox="0 0 51 57" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path opacity="0.2" d="M25.5 0L50.1817 14.25V42.75L25.5 57L0.818275 42.75V14.25L25.5 0Z"
-                      fill="url(#paint0_linear_10227_1149)" />
-                    <defs>
-                      <linearGradient id="paint0_linear_10227_1149" x1="54" y1="32.2174" x2="4.27476" y2="11.2486"
-                        gradientUnits="userSpaceOnUse">
-                        <stop stop-color="#FFDB01" />
-                        <stop offset="1" stop-color="#F4A419" />
-                      </linearGradient>
-                    </defs>
-                  </svg>
-                  <img class="tw-absolute" src="/assets/shuttle%201-VKm1M0LS.svg" alt="" class="item-img">
-                </div>
-                <div class="item-content">
-                  <h3 class="item-title">Tối ưu thời gian & Chi phí</h3>
-                  <p class="item-text">Đặt mình vào vị trí của khách hàng, chúng tôi thấu hiểu việc
-                    rút ngắn thời gian triển khai để tối ưu chi phí là một trong các tiêu chí chính
-                    ảnh hưởng đến kết quả thành công của từng chiến lược, từng giai đoạn.</p>
+
+        <div class="bg_wrapper">
+          <div class="wrapper_our_ser lg:p-0 tw-relative tw-flex tw-flex-col tw-items-center tw-gap-3 lg:tw-gap-y-10">
+            <div class="title_ser tw-flex tw-flex-col tw-items-center">
+              <h2 class="title tw-mb-2">GIÁ TRỊ DỊCH VỤ CỦA CHÚNG TÔI</h2>
+              <p class="lg:tw-text-body16">Đội ngũ của Quata Agency mang đến sự hài lòng trong từng dịch vụ.</p>
+            </div>
+
+            <div class="list_item tw-grid tw-grid-cols-1 md:tw-grid-cols-2 tw-gap-5 lg:tw-gap-y-7 tw-gap-x-8">
+              <div class="item tw-relative p-[10px]">
+                <div class="inner_item">
+                  <div class="item-image tw-relative">
+                    <svg width="57" height="57" viewBox="0 0 51 57" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path opacity="0.2" d="M25.5 0L50.1817 14.25V42.75L25.5 57L0.818275 42.75V14.25L25.5 0Z"
+                        fill="url(#paint0_linear_10227_1149)" />
+                      <defs>
+                        <linearGradient id="paint0_linear_10227_1149" x1="54" y1="32.2174" x2="4.27476" y2="11.2486"
+                          gradientUnits="userSpaceOnUse">
+                          <stop stop-color="#FFDB01" />
+                          <stop offset="1" stop-color="#F4A419" />
+                        </linearGradient>
+                      </defs>
+                    </svg>
+                    <img class="tw-absolute" src="/assets/shuttle%201-VKm1M0LS.svg" alt="" class="item-img">
+                  </div>
+                  <div class="item-content">
+                    <h3 class="item-title">Tối ưu thời gian & Chi phí</h3>
+                    <p class="item-text">Đặt mình vào vị trí của khách hàng, chúng tôi thấu hiểu việc
+                      rút ngắn thời gian triển khai để tối ưu chi phí là một trong các tiêu chí chính
+                      ảnh hưởng đến kết quả thành công của từng chiến lược, từng giai đoạn.</p>
+                  </div>
                 </div>
               </div>
-            </div>
-            <div class="item tw-relative p-[10px]">
-              <div class="inner_item">
-                <div class="item-image tw-relative">
-                  <svg width="57" height="57" viewBox="0 0 51 57" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path opacity="0.2" d="M25.5 0L50.1817 14.25V42.75L25.5 57L0.818275 42.75V14.25L25.5 0Z"
-                      fill="url(#paint0_linear_10227_1149)" />
-                    <defs>
-                      <linearGradient id="paint0_linear_10227_1149" x1="54" y1="32.2174" x2="4.27476" y2="11.2486"
-                        gradientUnits="userSpaceOnUse">
-                        <stop stop-color="#FFDB01" />
-                        <stop offset="1" stop-color="#F4A419" />
-                      </linearGradient>
-                    </defs>
-                  </svg>
-                  <img class="tw-absolute" src="/assets/shuttle%201-VKm1M0LS.svg" alt="" class="item-img">
-                </div>
-                <div class="item-content">
-                  <h3 class="item-title">Tối ưu thời gian & Chi phí</h3>
-                  <p class="item-text">Qua thời gian hình thành và phát triển, đội ngũ nhân sự Quata Agency được chọn
-                    lọc và trao dồi theo thời gian. Đúc kết kinh nghiệm qua 200+ dự án triển khai thực tế đa dạng nhiều
-                    lĩnh vực, chúng tôi tạo nên những sản phẩm hoàn thiện cho khách hàng.</p>
-                </div>
-              </div>
-            </div>
-            <div class="item tw-relative p-[10px]">
-              <div class="inner_item">
-                <div class="item-image tw-relative">
-                  <svg width="57" height="57" viewBox="0 0 51 57" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path opacity="0.2" d="M25.5 0L50.1817 14.25V42.75L25.5 57L0.818275 42.75V14.25L25.5 0Z"
-                      fill="url(#paint0_linear_10227_1149)" />
-                    <defs>
-                      <linearGradient id="paint0_linear_10227_1149" x1="54" y1="32.2174" x2="4.27476" y2="11.2486"
-                        gradientUnits="userSpaceOnUse">
-                        <stop stop-color="#FFDB01" />
-                        <stop offset="1" stop-color="#F4A419" />
-                      </linearGradient>
-                    </defs>
-                  </svg>
-                  <img class="tw-absolute" src="/assets/shuttle%201-VKm1M0LS.svg" alt="" class="item-img">
-                </div>
-                <div class="item-content">
-                  <h3 class="item-title">Tối ưu thời gian & Chi phí</h3>
-                  <p class="item-text">Đội ngũ chăm sóc khách hàng luôn luôn lắng nghe, tiếp nhận thông tin của khách
-                    hàng để kịp thời xử lý. Chúng tôi theo gót khách hàng từ giai đoạn ban đầu tiếp cận, trong suốt thời
-                    gian triển khai, đến sau khi vận hành dõi theo từng chặng đường thành công của khách hàng.</p>
+              <div class="item tw-relative p-[10px]">
+                <div class="inner_item">
+                  <div class="item-image tw-relative">
+                    <svg width="57" height="57" viewBox="0 0 51 57" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path opacity="0.2" d="M25.5 0L50.1817 14.25V42.75L25.5 57L0.818275 42.75V14.25L25.5 0Z"
+                        fill="url(#paint0_linear_10227_1149)" />
+                      <defs>
+                        <linearGradient id="paint0_linear_10227_1149" x1="54" y1="32.2174" x2="4.27476" y2="11.2486"
+                          gradientUnits="userSpaceOnUse">
+                          <stop stop-color="#FFDB01" />
+                          <stop offset="1" stop-color="#F4A419" />
+                        </linearGradient>
+                      </defs>
+                    </svg>
+                    <img class="tw-absolute" src="/assets/shuttle%201-VKm1M0LS.svg" alt="" class="item-img">
+                  </div>
+                  <div class="item-content">
+                    <h3 class="item-title">Tối ưu thời gian & Chi phí</h3>
+                    <p class="item-text">Qua thời gian hình thành và phát triển, đội ngũ nhân sự Quata Agency được chọn
+                      lọc và trao dồi theo thời gian. Đúc kết kinh nghiệm qua 200+ dự án triển khai thực tế đa dạng
+                      nhiều
+                      lĩnh vực, chúng tôi tạo nên những sản phẩm hoàn thiện cho khách hàng.</p>
+                  </div>
                 </div>
               </div>
-            </div>
-            <div class="item tw-relative p-[10px]">
-              <div class="inner_item">
-                <div class="item-image tw-relative">
-                  <svg width="57" height="57" viewBox="0 0 51 57" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path opacity="0.2" d="M25.5 0L50.1817 14.25V42.75L25.5 57L0.818275 42.75V14.25L25.5 0Z"
-                      fill="url(#paint0_linear_10227_1149)" />
-                    <defs>
-                      <linearGradient id="paint0_linear_10227_1149" x1="54" y1="32.2174" x2="4.27476" y2="11.2486"
-                        gradientUnits="userSpaceOnUse">
-                        <stop stop-color="#FFDB01" />
-                        <stop offset="1" stop-color="#F4A419" />
-                      </linearGradient>
-                    </defs>
-                  </svg>
-                  <img class="tw-absolute" src="/assets/shuttle%201-VKm1M0LS.svg" alt="" class="item-img">
+              <div class="item tw-relative p-[10px]">
+                <div class="inner_item">
+                  <div class="item-image tw-relative">
+                    <svg width="57" height="57" viewBox="0 0 51 57" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path opacity="0.2" d="M25.5 0L50.1817 14.25V42.75L25.5 57L0.818275 42.75V14.25L25.5 0Z"
+                        fill="url(#paint0_linear_10227_1149)" />
+                      <defs>
+                        <linearGradient id="paint0_linear_10227_1149" x1="54" y1="32.2174" x2="4.27476" y2="11.2486"
+                          gradientUnits="userSpaceOnUse">
+                          <stop stop-color="#FFDB01" />
+                          <stop offset="1" stop-color="#F4A419" />
+                        </linearGradient>
+                      </defs>
+                    </svg>
+                    <img class="tw-absolute" src="/assets/shuttle%201-VKm1M0LS.svg" alt="" class="item-img">
+                  </div>
+                  <div class="item-content">
+                    <h3 class="item-title">Tối ưu thời gian & Chi phí</h3>
+                    <p class="item-text">Đội ngũ chăm sóc khách hàng luôn luôn lắng nghe, tiếp nhận thông tin của khách
+                      hàng để kịp thời xử lý. Chúng tôi theo gót khách hàng từ giai đoạn ban đầu tiếp cận, trong suốt
+                      thời
+                      gian triển khai, đến sau khi vận hành dõi theo từng chặng đường thành công của khách hàng.</p>
+                  </div>
                 </div>
-                <div class="item-content">
-                  <h3 class="item-title">Tối ưu thời gian & Chi phí</h3>
-                  <p class="item-text">Đặt mình vào vị trí của khách hàng, chúng tôi thấu hiểu việc
-                    rút ngắn thời gian triển khai để tối ưu chi phí là một trong các tiêu chí chính
-                    ảnh hưởng đến kết quả thành công của từng chiến lược, từng giai đoạn.</p>
+              </div>
+              <div class="item tw-relative p-[10px]">
+                <div class="inner_item">
+                  <div class="item-image tw-relative">
+                    <svg width="57" height="57" viewBox="0 0 51 57" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path opacity="0.2" d="M25.5 0L50.1817 14.25V42.75L25.5 57L0.818275 42.75V14.25L25.5 0Z"
+                        fill="url(#paint0_linear_10227_1149)" />
+                      <defs>
+                        <linearGradient id="paint0_linear_10227_1149" x1="54" y1="32.2174" x2="4.27476" y2="11.2486"
+                          gradientUnits="userSpaceOnUse">
+                          <stop stop-color="#FFDB01" />
+                          <stop offset="1" stop-color="#F4A419" />
+                        </linearGradient>
+                      </defs>
+                    </svg>
+                    <img class="tw-absolute" src="/assets/shuttle%201-VKm1M0LS.svg" alt="" class="item-img">
+                  </div>
+                  <div class="item-content">
+                    <h3 class="item-title">Tối ưu thời gian & Chi phí</h3>
+                    <p class="item-text">Đặt mình vào vị trí của khách hàng, chúng tôi thấu hiểu việc
+                      rút ngắn thời gian triển khai để tối ưu chi phí là một trong các tiêu chí chính
+                      ảnh hưởng đến kết quả thành công của từng chiến lược, từng giai đoạn.</p>
+                  </div>
                 </div>
               </div>
             </div>
           </div>
         </div>
       </div>
+      <div class="wrapper_polygon">
+        <img class="polygon_1" src="data:image/svg+xml,%3csvg%20width='53'%20height='59'%20viewBox='0%200%2053%2059'%20fill='none'%20xmlns='http://www.w3.org/2000/svg'%3e%3cpath%20opacity='0.8'%20d='M26.5%200L52.0477%2014.75V44.25L26.5%2059L0.952251%2044.25V14.75L26.5%200Z'%20fill='url(%23paint0_linear_10213_967)'/%3e%3cdefs%3e%3clinearGradient%20id='paint0_linear_10213_967'%20x1='56'%20y1='33.3478'%20x2='4.53002'%20y2='11.6433'%20gradientUnits='userSpaceOnUse'%3e%3cstop%20stop-color='%23FFDB01'/%3e%3cstop%20offset='1'%20stop-color='%23F4A419'/%3e%3c/linearGradient%3e%3c/defs%3e%3c/svg%3e" alt="">
+        <img class="polygon_2" src="data:image/svg+xml,%3csvg%20width='53'%20height='59'%20viewBox='0%200%2053%2059'%20fill='none'%20xmlns='http://www.w3.org/2000/svg'%3e%3cpath%20opacity='0.8'%20d='M26.5%200L52.0477%2014.75V44.25L26.5%2059L0.952251%2044.25V14.75L26.5%200Z'%20fill='url(%23paint0_linear_10213_967)'/%3e%3cdefs%3e%3clinearGradient%20id='paint0_linear_10213_967'%20x1='56'%20y1='33.3478'%20x2='4.53002'%20y2='11.6433'%20gradientUnits='userSpaceOnUse'%3e%3cstop%20stop-color='%23FFDB01'/%3e%3cstop%20offset='1'%20stop-color='%23F4A419'/%3e%3c/linearGradient%3e%3c/defs%3e%3c/svg%3e" alt="">
+
+      </div>
     </div>
   </section>
 
   <section
     style="background-image: linear-gradient(rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.5)), url('https://quataagency.com/wp-content/webp-express/webp-images/uploads/2024/01/image-79.png.webp');"
-    class="section_feedback tw-max-w-full tw-py-[100px] tw-bg-cover tw-bg-center">
+    class="section_feedback tw-max-w-full tw-py-[40px] lg:tw-py-[100px] tw-bg-cover tw-bg-center">
     <img class="bg_img_fb" src="" alt="">
 
     <div class="tw-container tw-relative tw-text-center">
       <div class="box_title tw-max-w-[636px] tw-mx-auto">
-        <h2 class="title tw-mb-[8px] tw-text-h2 tw-uppercase">Khách hàng nhận xét</h2>
-        <p class="tw-mb-10 tw-text-body16">Sự phát triển của Quata được thống kê bằng kết quả của sự nỗ lực đội ngũ nhân
+        <h2 class="title title_heading tw-uppercase">Khách hàng nhận xét</h2>
+        <p class=" tw-mb-5 lg:tw-mb-10 description_heading">Sự phát triển của Quata được thống kê bằng kết quả của sự nỗ
+          lực đội ngũ
+          nhân
           sự, lời cảm
           nhận
           sâu sắc và
@@ -374,7 +309,38 @@
               </div>
 
               <div class="star_author">
-                <div class="star_fb">*****</div>
+                <div class="star_fb tw-my-[18px] tw-flex tw-flex-row tw-justify-center">
+                  <svg width="13" height="14" viewBox="0 0 13 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                      d="M12.6414 6.12381C13.2095 5.5406 12.8798 4.55928 12.0748 4.43736L9.34348 4.02366C9.01297 3.9736 8.72932 3.7617 8.58758 3.45895L7.40566 0.934431C7.0461 0.166444 5.9539 0.166443 5.59434 0.934431L4.41242 3.45895C4.27068 3.7617 3.98703 3.9736 3.65652 4.02366L0.925196 4.43736C0.120246 4.55928 -0.209453 5.5406 0.358593 6.12381L2.39866 8.21834C2.61967 8.44524 2.72011 8.76344 2.66941 9.07611L2.20011 11.9707C2.06661 12.7941 2.94049 13.4094 3.67067 13.0061L6.01655 11.7105C6.31743 11.5444 6.68257 11.5444 6.98345 11.7105L9.32933 13.0061C10.0595 13.4094 10.9334 12.7941 10.7999 11.9707L10.3306 9.07611C10.2799 8.76344 10.3803 8.44524 10.6013 8.21834L12.6414 6.12381Z"
+                      fill="#FFC400" />
+                  </svg>
+
+                  <svg width="13" height="14" viewBox="0 0 13 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                      d="M12.6414 6.12381C13.2095 5.5406 12.8798 4.55928 12.0748 4.43736L9.34348 4.02366C9.01297 3.9736 8.72932 3.7617 8.58758 3.45895L7.40566 0.934431C7.0461 0.166444 5.9539 0.166443 5.59434 0.934431L4.41242 3.45895C4.27068 3.7617 3.98703 3.9736 3.65652 4.02366L0.925196 4.43736C0.120246 4.55928 -0.209453 5.5406 0.358593 6.12381L2.39866 8.21834C2.61967 8.44524 2.72011 8.76344 2.66941 9.07611L2.20011 11.9707C2.06661 12.7941 2.94049 13.4094 3.67067 13.0061L6.01655 11.7105C6.31743 11.5444 6.68257 11.5444 6.98345 11.7105L9.32933 13.0061C10.0595 13.4094 10.9334 12.7941 10.7999 11.9707L10.3306 9.07611C10.2799 8.76344 10.3803 8.44524 10.6013 8.21834L12.6414 6.12381Z"
+                      fill="#FFC400" />
+                  </svg>
+
+                  <svg width="13" height="14" viewBox="0 0 13 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                      d="M12.6414 6.12381C13.2095 5.5406 12.8798 4.55928 12.0748 4.43736L9.34348 4.02366C9.01297 3.9736 8.72932 3.7617 8.58758 3.45895L7.40566 0.934431C7.0461 0.166444 5.9539 0.166443 5.59434 0.934431L4.41242 3.45895C4.27068 3.7617 3.98703 3.9736 3.65652 4.02366L0.925196 4.43736C0.120246 4.55928 -0.209453 5.5406 0.358593 6.12381L2.39866 8.21834C2.61967 8.44524 2.72011 8.76344 2.66941 9.07611L2.20011 11.9707C2.06661 12.7941 2.94049 13.4094 3.67067 13.0061L6.01655 11.7105C6.31743 11.5444 6.68257 11.5444 6.98345 11.7105L9.32933 13.0061C10.0595 13.4094 10.9334 12.7941 10.7999 11.9707L10.3306 9.07611C10.2799 8.76344 10.3803 8.44524 10.6013 8.21834L12.6414 6.12381Z"
+                      fill="#FFC400" />
+                  </svg>
+
+                  <svg width="13" height="14" viewBox="0 0 13 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                      d="M12.6414 6.12381C13.2095 5.5406 12.8798 4.55928 12.0748 4.43736L9.34348 4.02366C9.01297 3.9736 8.72932 3.7617 8.58758 3.45895L7.40566 0.934431C7.0461 0.166444 5.9539 0.166443 5.59434 0.934431L4.41242 3.45895C4.27068 3.7617 3.98703 3.9736 3.65652 4.02366L0.925196 4.43736C0.120246 4.55928 -0.209453 5.5406 0.358593 6.12381L2.39866 8.21834C2.61967 8.44524 2.72011 8.76344 2.66941 9.07611L2.20011 11.9707C2.06661 12.7941 2.94049 13.4094 3.67067 13.0061L6.01655 11.7105C6.31743 11.5444 6.68257 11.5444 6.98345 11.7105L9.32933 13.0061C10.0595 13.4094 10.9334 12.7941 10.7999 11.9707L10.3306 9.07611C10.2799 8.76344 10.3803 8.44524 10.6013 8.21834L12.6414 6.12381Z"
+                      fill="#FFC400" />
+                  </svg>
+
+                  <svg width="13" height="14" viewBox="0 0 13 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                      d="M12.6414 6.12381C13.2095 5.5406 12.8798 4.55928 12.0748 4.43736L9.34348 4.02366C9.01297 3.9736 8.72932 3.7617 8.58758 3.45895L7.40566 0.934431C7.0461 0.166444 5.9539 0.166443 5.59434 0.934431L4.41242 3.45895C4.27068 3.7617 3.98703 3.9736 3.65652 4.02366L0.925196 4.43736C0.120246 4.55928 -0.209453 5.5406 0.358593 6.12381L2.39866 8.21834C2.61967 8.44524 2.72011 8.76344 2.66941 9.07611L2.20011 11.9707C2.06661 12.7941 2.94049 13.4094 3.67067 13.0061L6.01655 11.7105C6.31743 11.5444 6.68257 11.5444 6.98345 11.7105L9.32933 13.0061C10.0595 13.4094 10.9334 12.7941 10.7999 11.9707L10.3306 9.07611C10.2799 8.76344 10.3803 8.44524 10.6013 8.21834L12.6414 6.12381Z"
+                      fill="#FFC400" />
+                  </svg>
+
+                </div>
                 <div class="box_author tw-text-center">
                   <h3 class="author_name ">Ms Hoan Anh</h3>
                   <h4 class="auhtor_position">Giám Đốc</h4>
@@ -393,13 +359,43 @@
                 </div>
                 <p class="item-content_fb tw-text-center tw-text-bodymain">
                   Tôi nhận được giá trị vượt kì vọng so với các đơn vị Marketing khác từ khâu ghi nhận yêu cầu thực hiện
-                  website, quy trình Marketting, ước tính chuyển đổi ước tính chuyển đổi ước tính chuyển đổiước tính
-                  chuyển đổi. Chân thành cảm ơn các bạn!
+                  website, quy trình Marketting, ước tính chuyển đổi. Chân thành cảm ơn các bạn!
                 </p>
               </div>
 
               <div class="star_author">
-                <div class="star_fb">*****</div>
+                <div class="star_fb tw-my-[18px] tw-flex tw-flex-row tw-justify-center">
+                  <svg width="13" height="14" viewBox="0 0 13 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                      d="M12.6414 6.12381C13.2095 5.5406 12.8798 4.55928 12.0748 4.43736L9.34348 4.02366C9.01297 3.9736 8.72932 3.7617 8.58758 3.45895L7.40566 0.934431C7.0461 0.166444 5.9539 0.166443 5.59434 0.934431L4.41242 3.45895C4.27068 3.7617 3.98703 3.9736 3.65652 4.02366L0.925196 4.43736C0.120246 4.55928 -0.209453 5.5406 0.358593 6.12381L2.39866 8.21834C2.61967 8.44524 2.72011 8.76344 2.66941 9.07611L2.20011 11.9707C2.06661 12.7941 2.94049 13.4094 3.67067 13.0061L6.01655 11.7105C6.31743 11.5444 6.68257 11.5444 6.98345 11.7105L9.32933 13.0061C10.0595 13.4094 10.9334 12.7941 10.7999 11.9707L10.3306 9.07611C10.2799 8.76344 10.3803 8.44524 10.6013 8.21834L12.6414 6.12381Z"
+                      fill="#FFC400" />
+                  </svg>
+
+                  <svg width="13" height="14" viewBox="0 0 13 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                      d="M12.6414 6.12381C13.2095 5.5406 12.8798 4.55928 12.0748 4.43736L9.34348 4.02366C9.01297 3.9736 8.72932 3.7617 8.58758 3.45895L7.40566 0.934431C7.0461 0.166444 5.9539 0.166443 5.59434 0.934431L4.41242 3.45895C4.27068 3.7617 3.98703 3.9736 3.65652 4.02366L0.925196 4.43736C0.120246 4.55928 -0.209453 5.5406 0.358593 6.12381L2.39866 8.21834C2.61967 8.44524 2.72011 8.76344 2.66941 9.07611L2.20011 11.9707C2.06661 12.7941 2.94049 13.4094 3.67067 13.0061L6.01655 11.7105C6.31743 11.5444 6.68257 11.5444 6.98345 11.7105L9.32933 13.0061C10.0595 13.4094 10.9334 12.7941 10.7999 11.9707L10.3306 9.07611C10.2799 8.76344 10.3803 8.44524 10.6013 8.21834L12.6414 6.12381Z"
+                      fill="#FFC400" />
+                  </svg>
+
+                  <svg width="13" height="14" viewBox="0 0 13 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                      d="M12.6414 6.12381C13.2095 5.5406 12.8798 4.55928 12.0748 4.43736L9.34348 4.02366C9.01297 3.9736 8.72932 3.7617 8.58758 3.45895L7.40566 0.934431C7.0461 0.166444 5.9539 0.166443 5.59434 0.934431L4.41242 3.45895C4.27068 3.7617 3.98703 3.9736 3.65652 4.02366L0.925196 4.43736C0.120246 4.55928 -0.209453 5.5406 0.358593 6.12381L2.39866 8.21834C2.61967 8.44524 2.72011 8.76344 2.66941 9.07611L2.20011 11.9707C2.06661 12.7941 2.94049 13.4094 3.67067 13.0061L6.01655 11.7105C6.31743 11.5444 6.68257 11.5444 6.98345 11.7105L9.32933 13.0061C10.0595 13.4094 10.9334 12.7941 10.7999 11.9707L10.3306 9.07611C10.2799 8.76344 10.3803 8.44524 10.6013 8.21834L12.6414 6.12381Z"
+                      fill="#FFC400" />
+                  </svg>
+
+                  <svg width="13" height="14" viewBox="0 0 13 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                      d="M12.6414 6.12381C13.2095 5.5406 12.8798 4.55928 12.0748 4.43736L9.34348 4.02366C9.01297 3.9736 8.72932 3.7617 8.58758 3.45895L7.40566 0.934431C7.0461 0.166444 5.9539 0.166443 5.59434 0.934431L4.41242 3.45895C4.27068 3.7617 3.98703 3.9736 3.65652 4.02366L0.925196 4.43736C0.120246 4.55928 -0.209453 5.5406 0.358593 6.12381L2.39866 8.21834C2.61967 8.44524 2.72011 8.76344 2.66941 9.07611L2.20011 11.9707C2.06661 12.7941 2.94049 13.4094 3.67067 13.0061L6.01655 11.7105C6.31743 11.5444 6.68257 11.5444 6.98345 11.7105L9.32933 13.0061C10.0595 13.4094 10.9334 12.7941 10.7999 11.9707L10.3306 9.07611C10.2799 8.76344 10.3803 8.44524 10.6013 8.21834L12.6414 6.12381Z"
+                      fill="#FFC400" />
+                  </svg>
+
+                  <svg width="13" height="14" viewBox="0 0 13 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                      d="M12.6414 6.12381C13.2095 5.5406 12.8798 4.55928 12.0748 4.43736L9.34348 4.02366C9.01297 3.9736 8.72932 3.7617 8.58758 3.45895L7.40566 0.934431C7.0461 0.166444 5.9539 0.166443 5.59434 0.934431L4.41242 3.45895C4.27068 3.7617 3.98703 3.9736 3.65652 4.02366L0.925196 4.43736C0.120246 4.55928 -0.209453 5.5406 0.358593 6.12381L2.39866 8.21834C2.61967 8.44524 2.72011 8.76344 2.66941 9.07611L2.20011 11.9707C2.06661 12.7941 2.94049 13.4094 3.67067 13.0061L6.01655 11.7105C6.31743 11.5444 6.68257 11.5444 6.98345 11.7105L9.32933 13.0061C10.0595 13.4094 10.9334 12.7941 10.7999 11.9707L10.3306 9.07611C10.2799 8.76344 10.3803 8.44524 10.6013 8.21834L12.6414 6.12381Z"
+                      fill="#FFC400" />
+                  </svg>
+
+                </div>
                 <div class="box_author tw-text-center">
                   <h3 class="author_name ">Ms Hoan Anh</h3>
                   <h4 class="auhtor_position">Giám Đốc</h4>
@@ -417,13 +413,43 @@
                 </div>
                 <p class="item-content_fb tw-text-center tw-text-bodymain">
                   Tôi nhận được giá trị vượt kì vọng so với các đơn vị Marketing khác từ khâu ghi nhận yêu cầu thực hiện
-                  website, quy trình Marketting, ước tính chuyển đổi ước tính chuyển đổi ước tính chuyển đổiước tính
-                  chuyển đổi. Chân thành cảm ơn các bạn!
+                  website, quy trình Marketting, ước tính chuyển đổi. Chân thành cảm ơn các bạn!
                 </p>
               </div>
 
               <div class="star_author">
-                <div class="star_fb">*****</div>
+                <div class="star_fb tw-my-[18px] tw-flex tw-flex-row tw-justify-center">
+                  <svg width="13" height="14" viewBox="0 0 13 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                      d="M12.6414 6.12381C13.2095 5.5406 12.8798 4.55928 12.0748 4.43736L9.34348 4.02366C9.01297 3.9736 8.72932 3.7617 8.58758 3.45895L7.40566 0.934431C7.0461 0.166444 5.9539 0.166443 5.59434 0.934431L4.41242 3.45895C4.27068 3.7617 3.98703 3.9736 3.65652 4.02366L0.925196 4.43736C0.120246 4.55928 -0.209453 5.5406 0.358593 6.12381L2.39866 8.21834C2.61967 8.44524 2.72011 8.76344 2.66941 9.07611L2.20011 11.9707C2.06661 12.7941 2.94049 13.4094 3.67067 13.0061L6.01655 11.7105C6.31743 11.5444 6.68257 11.5444 6.98345 11.7105L9.32933 13.0061C10.0595 13.4094 10.9334 12.7941 10.7999 11.9707L10.3306 9.07611C10.2799 8.76344 10.3803 8.44524 10.6013 8.21834L12.6414 6.12381Z"
+                      fill="#FFC400" />
+                  </svg>
+
+                  <svg width="13" height="14" viewBox="0 0 13 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                      d="M12.6414 6.12381C13.2095 5.5406 12.8798 4.55928 12.0748 4.43736L9.34348 4.02366C9.01297 3.9736 8.72932 3.7617 8.58758 3.45895L7.40566 0.934431C7.0461 0.166444 5.9539 0.166443 5.59434 0.934431L4.41242 3.45895C4.27068 3.7617 3.98703 3.9736 3.65652 4.02366L0.925196 4.43736C0.120246 4.55928 -0.209453 5.5406 0.358593 6.12381L2.39866 8.21834C2.61967 8.44524 2.72011 8.76344 2.66941 9.07611L2.20011 11.9707C2.06661 12.7941 2.94049 13.4094 3.67067 13.0061L6.01655 11.7105C6.31743 11.5444 6.68257 11.5444 6.98345 11.7105L9.32933 13.0061C10.0595 13.4094 10.9334 12.7941 10.7999 11.9707L10.3306 9.07611C10.2799 8.76344 10.3803 8.44524 10.6013 8.21834L12.6414 6.12381Z"
+                      fill="#FFC400" />
+                  </svg>
+
+                  <svg width="13" height="14" viewBox="0 0 13 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                      d="M12.6414 6.12381C13.2095 5.5406 12.8798 4.55928 12.0748 4.43736L9.34348 4.02366C9.01297 3.9736 8.72932 3.7617 8.58758 3.45895L7.40566 0.934431C7.0461 0.166444 5.9539 0.166443 5.59434 0.934431L4.41242 3.45895C4.27068 3.7617 3.98703 3.9736 3.65652 4.02366L0.925196 4.43736C0.120246 4.55928 -0.209453 5.5406 0.358593 6.12381L2.39866 8.21834C2.61967 8.44524 2.72011 8.76344 2.66941 9.07611L2.20011 11.9707C2.06661 12.7941 2.94049 13.4094 3.67067 13.0061L6.01655 11.7105C6.31743 11.5444 6.68257 11.5444 6.98345 11.7105L9.32933 13.0061C10.0595 13.4094 10.9334 12.7941 10.7999 11.9707L10.3306 9.07611C10.2799 8.76344 10.3803 8.44524 10.6013 8.21834L12.6414 6.12381Z"
+                      fill="#FFC400" />
+                  </svg>
+
+                  <svg width="13" height="14" viewBox="0 0 13 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                      d="M12.6414 6.12381C13.2095 5.5406 12.8798 4.55928 12.0748 4.43736L9.34348 4.02366C9.01297 3.9736 8.72932 3.7617 8.58758 3.45895L7.40566 0.934431C7.0461 0.166444 5.9539 0.166443 5.59434 0.934431L4.41242 3.45895C4.27068 3.7617 3.98703 3.9736 3.65652 4.02366L0.925196 4.43736C0.120246 4.55928 -0.209453 5.5406 0.358593 6.12381L2.39866 8.21834C2.61967 8.44524 2.72011 8.76344 2.66941 9.07611L2.20011 11.9707C2.06661 12.7941 2.94049 13.4094 3.67067 13.0061L6.01655 11.7105C6.31743 11.5444 6.68257 11.5444 6.98345 11.7105L9.32933 13.0061C10.0595 13.4094 10.9334 12.7941 10.7999 11.9707L10.3306 9.07611C10.2799 8.76344 10.3803 8.44524 10.6013 8.21834L12.6414 6.12381Z"
+                      fill="#FFC400" />
+                  </svg>
+
+                  <svg width="13" height="14" viewBox="0 0 13 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                      d="M12.6414 6.12381C13.2095 5.5406 12.8798 4.55928 12.0748 4.43736L9.34348 4.02366C9.01297 3.9736 8.72932 3.7617 8.58758 3.45895L7.40566 0.934431C7.0461 0.166444 5.9539 0.166443 5.59434 0.934431L4.41242 3.45895C4.27068 3.7617 3.98703 3.9736 3.65652 4.02366L0.925196 4.43736C0.120246 4.55928 -0.209453 5.5406 0.358593 6.12381L2.39866 8.21834C2.61967 8.44524 2.72011 8.76344 2.66941 9.07611L2.20011 11.9707C2.06661 12.7941 2.94049 13.4094 3.67067 13.0061L6.01655 11.7105C6.31743 11.5444 6.68257 11.5444 6.98345 11.7105L9.32933 13.0061C10.0595 13.4094 10.9334 12.7941 10.7999 11.9707L10.3306 9.07611C10.2799 8.76344 10.3803 8.44524 10.6013 8.21834L12.6414 6.12381Z"
+                      fill="#FFC400" />
+                  </svg>
+
+                </div>
                 <div class="box_author tw-text-center">
                   <h3 class="author_name ">Ms Hoan Anh</h3>
                   <h4 class="auhtor_position">Giám Đốc</h4>
@@ -433,7 +459,6 @@
             </div>
 
           </div>
-
           <div class="swiper-slide">
             <div class="item">
               <div class="content_image tw-text-center  ">
@@ -442,13 +467,43 @@
                 </div>
                 <p class="item-content_fb tw-text-center tw-text-bodymain">
                   Tôi nhận được giá trị vượt kì vọng so với các đơn vị Marketing khác từ khâu ghi nhận yêu cầu thực hiện
-                  website, quy trình Marketting, ước tính chuyển đổi ước tính chuyển đổi ước tính chuyển đổiước tính
-                  chuyển đổi. Chân thành cảm ơn các bạn!
+                  website, quy trình Marketting, ước tính chuyển đổi. Chân thành cảm ơn các bạn!
                 </p>
               </div>
 
               <div class="star_author">
-                <div class="star_fb">*****</div>
+                <div class="star_fb tw-my-[18px] tw-flex tw-flex-row tw-justify-center">
+                  <svg width="13" height="14" viewBox="0 0 13 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                      d="M12.6414 6.12381C13.2095 5.5406 12.8798 4.55928 12.0748 4.43736L9.34348 4.02366C9.01297 3.9736 8.72932 3.7617 8.58758 3.45895L7.40566 0.934431C7.0461 0.166444 5.9539 0.166443 5.59434 0.934431L4.41242 3.45895C4.27068 3.7617 3.98703 3.9736 3.65652 4.02366L0.925196 4.43736C0.120246 4.55928 -0.209453 5.5406 0.358593 6.12381L2.39866 8.21834C2.61967 8.44524 2.72011 8.76344 2.66941 9.07611L2.20011 11.9707C2.06661 12.7941 2.94049 13.4094 3.67067 13.0061L6.01655 11.7105C6.31743 11.5444 6.68257 11.5444 6.98345 11.7105L9.32933 13.0061C10.0595 13.4094 10.9334 12.7941 10.7999 11.9707L10.3306 9.07611C10.2799 8.76344 10.3803 8.44524 10.6013 8.21834L12.6414 6.12381Z"
+                      fill="#FFC400" />
+                  </svg>
+
+                  <svg width="13" height="14" viewBox="0 0 13 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                      d="M12.6414 6.12381C13.2095 5.5406 12.8798 4.55928 12.0748 4.43736L9.34348 4.02366C9.01297 3.9736 8.72932 3.7617 8.58758 3.45895L7.40566 0.934431C7.0461 0.166444 5.9539 0.166443 5.59434 0.934431L4.41242 3.45895C4.27068 3.7617 3.98703 3.9736 3.65652 4.02366L0.925196 4.43736C0.120246 4.55928 -0.209453 5.5406 0.358593 6.12381L2.39866 8.21834C2.61967 8.44524 2.72011 8.76344 2.66941 9.07611L2.20011 11.9707C2.06661 12.7941 2.94049 13.4094 3.67067 13.0061L6.01655 11.7105C6.31743 11.5444 6.68257 11.5444 6.98345 11.7105L9.32933 13.0061C10.0595 13.4094 10.9334 12.7941 10.7999 11.9707L10.3306 9.07611C10.2799 8.76344 10.3803 8.44524 10.6013 8.21834L12.6414 6.12381Z"
+                      fill="#FFC400" />
+                  </svg>
+
+                  <svg width="13" height="14" viewBox="0 0 13 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                      d="M12.6414 6.12381C13.2095 5.5406 12.8798 4.55928 12.0748 4.43736L9.34348 4.02366C9.01297 3.9736 8.72932 3.7617 8.58758 3.45895L7.40566 0.934431C7.0461 0.166444 5.9539 0.166443 5.59434 0.934431L4.41242 3.45895C4.27068 3.7617 3.98703 3.9736 3.65652 4.02366L0.925196 4.43736C0.120246 4.55928 -0.209453 5.5406 0.358593 6.12381L2.39866 8.21834C2.61967 8.44524 2.72011 8.76344 2.66941 9.07611L2.20011 11.9707C2.06661 12.7941 2.94049 13.4094 3.67067 13.0061L6.01655 11.7105C6.31743 11.5444 6.68257 11.5444 6.98345 11.7105L9.32933 13.0061C10.0595 13.4094 10.9334 12.7941 10.7999 11.9707L10.3306 9.07611C10.2799 8.76344 10.3803 8.44524 10.6013 8.21834L12.6414 6.12381Z"
+                      fill="#FFC400" />
+                  </svg>
+
+                  <svg width="13" height="14" viewBox="0 0 13 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                      d="M12.6414 6.12381C13.2095 5.5406 12.8798 4.55928 12.0748 4.43736L9.34348 4.02366C9.01297 3.9736 8.72932 3.7617 8.58758 3.45895L7.40566 0.934431C7.0461 0.166444 5.9539 0.166443 5.59434 0.934431L4.41242 3.45895C4.27068 3.7617 3.98703 3.9736 3.65652 4.02366L0.925196 4.43736C0.120246 4.55928 -0.209453 5.5406 0.358593 6.12381L2.39866 8.21834C2.61967 8.44524 2.72011 8.76344 2.66941 9.07611L2.20011 11.9707C2.06661 12.7941 2.94049 13.4094 3.67067 13.0061L6.01655 11.7105C6.31743 11.5444 6.68257 11.5444 6.98345 11.7105L9.32933 13.0061C10.0595 13.4094 10.9334 12.7941 10.7999 11.9707L10.3306 9.07611C10.2799 8.76344 10.3803 8.44524 10.6013 8.21834L12.6414 6.12381Z"
+                      fill="#FFC400" />
+                  </svg>
+
+                  <svg width="13" height="14" viewBox="0 0 13 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                      d="M12.6414 6.12381C13.2095 5.5406 12.8798 4.55928 12.0748 4.43736L9.34348 4.02366C9.01297 3.9736 8.72932 3.7617 8.58758 3.45895L7.40566 0.934431C7.0461 0.166444 5.9539 0.166443 5.59434 0.934431L4.41242 3.45895C4.27068 3.7617 3.98703 3.9736 3.65652 4.02366L0.925196 4.43736C0.120246 4.55928 -0.209453 5.5406 0.358593 6.12381L2.39866 8.21834C2.61967 8.44524 2.72011 8.76344 2.66941 9.07611L2.20011 11.9707C2.06661 12.7941 2.94049 13.4094 3.67067 13.0061L6.01655 11.7105C6.31743 11.5444 6.68257 11.5444 6.98345 11.7105L9.32933 13.0061C10.0595 13.4094 10.9334 12.7941 10.7999 11.9707L10.3306 9.07611C10.2799 8.76344 10.3803 8.44524 10.6013 8.21834L12.6414 6.12381Z"
+                      fill="#FFC400" />
+                  </svg>
+
+                </div>
                 <div class="box_author tw-text-center">
                   <h3 class="author_name ">Ms Hoan Anh</h3>
                   <h4 class="auhtor_position">Giám Đốc</h4>
@@ -470,17 +525,15 @@
 
   <section
     style="background-image: linear-gradient(rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.5)), url('/assets/bg_projects-Ce3HYwZX.png');"
-    class="section_projects tw-max-w-full tw-py-[60px] tw-bg-cover tw-bg-center">
+    class="section_projects tw-max-w-full tw-py-10 lg:tw-py-[60px] tw-bg-cover tw-bg-center">
     <img class="bg_img_fb" src="" alt="">
 
     <div class="tw-container tw-relative tw-text-center">
       <div class="box_title tw-max-w-[636px] tw-mx-auto">
-        <h2 class="title tw-mb-[8px] tw-text-h2 tw-uppercase">DỰ ÁN TIÊU BIỂU ĐÃ THỰC HIỆN</h2>
-        <p class="tw-mb-10 tw-text-body16">Sự phát triển của Quata được thống kê bằng kết quả của sự nỗ lực đội ngũ nhân
-          sự, lời cảm
-          nhận
-          sâu sắc và
-          chân thật từ phía Quý khách hàng - Đối tác.</p>
+        <h2 class="title title_heading  tw-uppercase">DỰ ÁN TIÊU BIỂU ĐÃ THỰC HIỆN</h2>
+        <p class="tw-mb-5 lg:tw-mb-10 description_heading">Mời Quý khách hàng - Đối tác dành thời gian điểm qua một số
+          dự án tiêu
+          biểu Quata Agency cung đã thực hiện.</p>
       </div>
       <div class="swiper swiper_project">
         <div class="swiper-wrapper list_item_project">
@@ -585,82 +638,109 @@
       </div>
       <div class="swiper-pagination"></div>
 
+      <!-- Nút Prev & Next -->
+      <div class=" custom_btn_prev">
+        <svg width="7" height="12" viewBox="0 0 7 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M5.99967 10.6668L1.33301 6.00016L5.99967 1.3335" stroke="#AEAEAE" stroke-width="2"
+            stroke-linecap="round" stroke-linejoin="round" />
+        </svg>
+
+
+      </div>
+      <div class=" custom_btn_next">
+        <svg width="7" height="12" viewBox="0 0 7 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M1.00033 10.6668L5.66699 6.00016L1.00033 1.3335" stroke="#AEAEAE" stroke-width="2"
+            stroke-linecap="round" stroke-linejoin="round" />
+        </svg>
+
+      </div>
+
     </div>
     </div>
   </section>
 
 
-  <section class="section_process tw-pt-[100px] tw-pb-[220px]">
-    <div class="tw-container tw-flex tw-flex-col tw-justify-center tw-items-center tw-gap-y-[180px]">
+  <section class="section_process tw-py-10 lg:tw-pt-[100px] md:tw-pb-[220px]">
+    <div class="tw-container tw-flex tw-flex-col tw-justify-center tw-items-center tw-gap-y-[45px] md:tw-gap-y-[180px]">
       <div class="box_title tw-text-center tw-max-w-[768px]">
-        <h2 class="tw-text-h2 tw-mb-2">Quy trình thực hiện</h2>
-        <p class="sub_title tw-text-body16">Quy trình triển khai của chúng tôi được điều chỉnh tùy thuộc vào quy mô của
+        <h2 class="title_heading">Quy trình thực hiện</h2>
+        <p class="description_heading lg:tw-text-body16">Quy trình triển khai của chúng tôi được điều chỉnh tùy thuộc
+          vào
+          quy mô của
           dự án và yêu
           cầu cụ thể. Phối hợp
           chặt chẽ cùng khách hàng trong từng giai đoạn là chìa khoá tạo nên thành công của dự án.</p>
       </div>
       <div class="wrapper_timeline">
         <div class="timeline_process"></div>
+        <div class="timeline_process_mobile"></div>
+
 
         <div class="timeline-container tw-flex tw-justify-between">
-          <!-- Timeline items -->
-          <div class="timeline-item tw-text-center">
+          <div class="timeline-item">
             <div class="box_number_title tw-relative">
               <div class="number">01</div>
-              <h3 class="tw-mb-[5px]">Nhận yêu cầu</h3>
+              <h3 class="tw-mb-[5px] tw-text-nowrap">Nhận yêu cầu</h3>
             </div>
-            <p class="tw-text-bodymain tw-text-start">Thu nhập yêu cầu, trao đổi trực tiếp thông tin đầu vào
+            <p class="lg:tw-text-bodymain lg:tw-text-start">Thu nhập yêu cầu, trao đổi trực tiếp thông tin đầu vào
               chính xác.</p>
             <div class="timeline-dot"></div>
           </div>
 
-          <div class="timeline-item tw-text-center">
+          <div class="timeline-item">
             <div class="box_number_title tw-relative">
-              <div class="number">01</div>
-              <h3 class="tw-mb-[5px]">Nhận yêu cầu</h3>
+              <div class="number">02</div>
+              <h3 class="tw-mb-[5px] tw-text-nowrap">Nghiên cứu & Phương án
+              </h3>
             </div>
-            <p class="tw-text-bodymain tw-text-start">Thu nhập yêu cầu, trao đổi trực tiếp thông tin đầu vào
+            <p class="lg:tw-text-bodymain lg:tw-text-start">Chuyên viên nghiên cứu sau đó đề xuất kế hoạch.
+            </p>
+            <div class="timeline-dot"></div>
+          </div>
+
+          <div class="timeline-item">
+            <div class="box_number_title tw-relative">
+              <div class="number">03</div>
+              <h3 class="tw-mb-[5px] tw-text-nowrap">Ký hợp đồng
+              </h3>
+            </div>
+            <p class="lg:tw-text-bodymain lg:tw-text-start">Soạn thảo điều khoản và ký kết triển khai hợp đồng rõ ràng,
+              minh bạch.
+            </p>
+            <div class="timeline-dot"></div>
+          </div>
+
+          <div class="timeline-item">
+            <div class="box_number_title tw-relative">
+              <div class="number">04</div>
+              <h3 class="tw-mb-[5px] tw-text-nowrap">Triển khai
+              </h3>
+            </div>
+            <p class="lg:tw-text-bodymain lg:tw-text-start">Thu nhập yêu cầu, trao đổi trực tiếp thông tin đầu vào
               chính xác.</p>
             <div class="timeline-dot"></div>
           </div>
 
-          <div class="timeline-item tw-text-center">
+          <div class="timeline-item">
             <div class="box_number_title tw-relative">
-              <div class="number">01</div>
-              <h3 class="tw-mb-[5px]">Nhận yêu cầu</h3>
+              <div class="number">05</div>
+              <h3 class="tw-mb-[5px] tw-text-nowrap">Nghiệm Thu</h3>
             </div>
-            <p class="tw-text-bodymain tw-text-start">Thu nhập yêu cầu, trao đổi trực tiếp thông tin đầu vào
-              chính xác.</p>
+            <p class="lg:tw-text-bodymain lg:tw-text-start">Đối chiếu kết quả công việc kèm yêu cầu theo giai đoạn để
+              nghiệm thu.
+            </p>
             <div class="timeline-dot"></div>
           </div>
 
-          <div class="timeline-item tw-text-center">
+          <div class="timeline-item">
             <div class="box_number_title tw-relative">
-              <div class="number">01</div>
-              <h3 class="tw-mb-[5px]">Nhận yêu cầu</h3>
+              <div class="number">06</div>
+              <h3 class="tw-mb-[5px] tw-text-nowrap">Bàn giao
+              </h3>
             </div>
-            <p class="tw-text-bodymain tw-text-start">Thu nhập yêu cầu, trao đổi trực tiếp thông tin đầu vào
-              chính xác.</p>
-            <div class="timeline-dot"></div>
-          </div>
-
-          <div class="timeline-item tw-text-center">
-            <div class="box_number_title tw-relative">
-              <div class="number">01</div>
-              <h3 class="tw-mb-[5px]">Nhận yêu cầu</h3>
-            </div>
-            <p class="tw-text-bodymain tw-text-start">Thu nhập yêu cầu, trao đổi trực tiếp thông tin đầu vào
-              chính xác.</p>
-            <div class="timeline-dot"></div>
-          </div>
-
-          <div class="timeline-item tw-text-center">
-            <div class="box_number_title tw-relative">
-              <div class="number">01</div>
-              <h3 class="tw-mb-[5px]">Nhận yêu cầu</h3>
-            </div>
-            <p class="tw-text-bodymain tw-text-start">Thu nhập yêu cầu, trao đổi trực tiếp thông tin đầu vào
-              chính xác.</p>
+            <p class="lg:tw-text-bodymain lg:tw-text-start">Tổng hợp, bàn giao, hướng dẫn khách hàng tài nguyên tương
+              ứng.
+            </p>
             <div class="timeline-dot"></div>
           </div>
         </div>
@@ -668,62 +748,72 @@
     </div>
   </section>
 
-  <section class="section_contact">
-    <div class="tw-container">
-      <div class="wrapper_info_contact tw-relative">
-        <div class="box_infocontact">
-          <h2 class="tw-mb-6">NHẬN TƯ VẤN THIẾT KẾ WEBSITE</h2>
-          <div class="list_info tw-gap-y-6 tw-flex tw-flex-col">
-            <div class="item tw-flex tw-flex-row tw-gap-[15px]">
-              <div class="item-icon tw-flex tw-items-center tw-justify-center tw-flex-shrink">
-                <img
-                  src="data:image/svg+xml,%3csvg%20width='20'%20height='21'%20viewBox='0%200%2020%2021'%20fill='none'%20xmlns='http://www.w3.org/2000/svg'%3e%3cpath%20d='M19.4296%2014.6327L15.0546%2012.7577C14.8677%2012.678%2014.6599%2012.6612%2014.4627%2012.7099C14.2654%2012.7585%2014.0893%2012.8698%2013.9608%2013.0272L12.0233%2015.3944C8.98248%2013.9607%206.53535%2011.5136%205.10165%208.47283L7.46888%206.5353C7.62657%206.40705%207.73818%206.23091%207.78681%206.03355C7.83545%205.8362%207.81846%205.62837%207.73842%205.44153L5.86338%201.06645C5.77554%200.865046%205.62016%200.700605%205.42406%200.601483C5.22796%200.502361%205.00341%200.474773%204.78915%200.523474L0.726575%201.46099C0.519997%201.50869%200.335688%201.62501%200.203728%201.79095C0.0717689%201.95689%20-4.75872e-05%202.16266%202.36575e-08%202.37468C2.36575e-08%2012.3944%208.12123%2020.5%2018.1253%2020.5C18.3374%2020.5001%2018.5433%2020.4284%2018.7093%2020.2964C18.8753%2020.1644%2018.9917%2019.9801%2019.0394%2019.7734L19.9769%2015.7109C20.0253%2015.4955%2019.9971%2015.2701%2019.8972%2015.0733C19.7973%2014.8765%2019.632%2014.7207%2019.4296%2014.6327Z'%20fill='%23AD7314'/%3e%3c/svg%3e"
-                  alt="" class="item-img">
+  <section class="section_contact tw-mt-8 lg:tw-mt-10">
+    <div class="tw-container tw-max-w-screen-2xl tw-overflow-x-clip">
+      <div class="tw-container tw-p-0 ">
+        <div class="wrapper_info_contact tw-relative">
+          <div class="box_infocontact">
+            <h2 class=" tw-mb-5 lg:tw-mb-6">NHẬN TƯ VẤN THIẾT KẾ WEBSITE</h2>
+            <div class="list_info tw-mb-8 tw-gap-y-6 tw-flex tw-flex-col">
+              <div class="item tw-flex tw-flex-row tw-gap-[15px]">
+                <div class="item-icon tw-flex tw-items-center tw-justify-center tw-flex-shrink">
+                  <img src="data:image/svg+xml,%3csvg%20width='20'%20height='21'%20viewBox='0%200%2020%2021'%20fill='none'%20xmlns='http://www.w3.org/2000/svg'%3e%3cpath%20d='M19.4296%2014.6327L15.0546%2012.7577C14.8677%2012.678%2014.6599%2012.6612%2014.4627%2012.7099C14.2654%2012.7585%2014.0893%2012.8698%2013.9608%2013.0272L12.0233%2015.3944C8.98248%2013.9607%206.53535%2011.5136%205.10165%208.47283L7.46888%206.5353C7.62657%206.40705%207.73818%206.23091%207.78681%206.03355C7.83545%205.8362%207.81846%205.62837%207.73842%205.44153L5.86338%201.06645C5.77554%200.865046%205.62016%200.700605%205.42406%200.601483C5.22796%200.502361%205.00341%200.474773%204.78915%200.523474L0.726575%201.46099C0.519997%201.50869%200.335688%201.62501%200.203728%201.79095C0.0717689%201.95689%20-4.75872e-05%202.16266%202.36575e-08%202.37468C2.36575e-08%2012.3944%208.12123%2020.5%2018.1253%2020.5C18.3374%2020.5001%2018.5433%2020.4284%2018.7093%2020.2964C18.8753%2020.1644%2018.9917%2019.9801%2019.0394%2019.7734L19.9769%2015.7109C20.0253%2015.4955%2019.9971%2015.2701%2019.8972%2015.0733C19.7973%2014.8765%2019.632%2014.7207%2019.4296%2014.6327Z'%20fill='%23AD7314'/%3e%3c/svg%3e" alt="" class="item-img">
+                </div>
+                <div class="item-content">
+                  <h3 class="item-title">HOTLINE</h3>
+                  <p class="item-text tw-text-bodymain">076 8666 638</p>
+                </div>
               </div>
-              <div class="item-content">
-                <h3 class="item-title">HOTLINE</h3>
-                <p class="item-text tw-text-bodymain">076 8666 638</p>
+              <div class="item tw-flex tw-flex-row tw-gap-[15px]">
+                <div class="item-icon tw-flex tw-items-center tw-justify-center tw-flex-shrink">
+                  <img src="data:image/svg+xml,%3csvg%20width='20'%20height='21'%20viewBox='0%200%2020%2021'%20fill='none'%20xmlns='http://www.w3.org/2000/svg'%3e%3cpath%20d='M19.4296%2014.6327L15.0546%2012.7577C14.8677%2012.678%2014.6599%2012.6612%2014.4627%2012.7099C14.2654%2012.7585%2014.0893%2012.8698%2013.9608%2013.0272L12.0233%2015.3944C8.98248%2013.9607%206.53535%2011.5136%205.10165%208.47283L7.46888%206.5353C7.62657%206.40705%207.73818%206.23091%207.78681%206.03355C7.83545%205.8362%207.81846%205.62837%207.73842%205.44153L5.86338%201.06645C5.77554%200.865046%205.62016%200.700605%205.42406%200.601483C5.22796%200.502361%205.00341%200.474773%204.78915%200.523474L0.726575%201.46099C0.519997%201.50869%200.335688%201.62501%200.203728%201.79095C0.0717689%201.95689%20-4.75872e-05%202.16266%202.36575e-08%202.37468C2.36575e-08%2012.3944%208.12123%2020.5%2018.1253%2020.5C18.3374%2020.5001%2018.5433%2020.4284%2018.7093%2020.2964C18.8753%2020.1644%2018.9917%2019.9801%2019.0394%2019.7734L19.9769%2015.7109C20.0253%2015.4955%2019.9971%2015.2701%2019.8972%2015.0733C19.7973%2014.8765%2019.632%2014.7207%2019.4296%2014.6327Z'%20fill='%23AD7314'/%3e%3c/svg%3e" alt="" class="item-img">
+                </div>
+                <div class="item-content">
+                  <h3 class="item-title">HOTLINE</h3>
+                  <p class="item-text tw-text-bodymain">GPKD: 463/85/12 Lê Đức Thọ, Phường 16, Quận Gò Vấp, TP.HCM</p>
+                </div>
               </div>
-            </div>
-            <div class="item tw-flex tw-flex-row tw-gap-[15px]">
-              <div class="item-icon tw-flex tw-items-center tw-justify-center tw-flex-shrink">
-                <img
-                  src="data:image/svg+xml,%3csvg%20width='20'%20height='21'%20viewBox='0%200%2020%2021'%20fill='none'%20xmlns='http://www.w3.org/2000/svg'%3e%3cpath%20d='M19.4296%2014.6327L15.0546%2012.7577C14.8677%2012.678%2014.6599%2012.6612%2014.4627%2012.7099C14.2654%2012.7585%2014.0893%2012.8698%2013.9608%2013.0272L12.0233%2015.3944C8.98248%2013.9607%206.53535%2011.5136%205.10165%208.47283L7.46888%206.5353C7.62657%206.40705%207.73818%206.23091%207.78681%206.03355C7.83545%205.8362%207.81846%205.62837%207.73842%205.44153L5.86338%201.06645C5.77554%200.865046%205.62016%200.700605%205.42406%200.601483C5.22796%200.502361%205.00341%200.474773%204.78915%200.523474L0.726575%201.46099C0.519997%201.50869%200.335688%201.62501%200.203728%201.79095C0.0717689%201.95689%20-4.75872e-05%202.16266%202.36575e-08%202.37468C2.36575e-08%2012.3944%208.12123%2020.5%2018.1253%2020.5C18.3374%2020.5001%2018.5433%2020.4284%2018.7093%2020.2964C18.8753%2020.1644%2018.9917%2019.9801%2019.0394%2019.7734L19.9769%2015.7109C20.0253%2015.4955%2019.9971%2015.2701%2019.8972%2015.0733C19.7973%2014.8765%2019.632%2014.7207%2019.4296%2014.6327Z'%20fill='%23AD7314'/%3e%3c/svg%3e"
-                  alt="" class="item-img">
-              </div>
-              <div class="item-content">
-                <h3 class="item-title">HOTLINE</h3>
-                <p class="item-text tw-text-bodymain">GPKD: 463/85/12 Lê Đức Thọ, Phường 16, Quận Gò Vấp, TP.HCM</p>
-              </div>
-            </div>
-            <div class="item tw-flex tw-flex-row tw-gap-[15px]">
-              <div class="item-icon tw-flex tw-items-center tw-justify-center tw-flex-shrink">
-                <img
-                  src="data:image/svg+xml,%3csvg%20width='20'%20height='21'%20viewBox='0%200%2020%2021'%20fill='none'%20xmlns='http://www.w3.org/2000/svg'%3e%3cpath%20d='M19.4296%2014.6327L15.0546%2012.7577C14.8677%2012.678%2014.6599%2012.6612%2014.4627%2012.7099C14.2654%2012.7585%2014.0893%2012.8698%2013.9608%2013.0272L12.0233%2015.3944C8.98248%2013.9607%206.53535%2011.5136%205.10165%208.47283L7.46888%206.5353C7.62657%206.40705%207.73818%206.23091%207.78681%206.03355C7.83545%205.8362%207.81846%205.62837%207.73842%205.44153L5.86338%201.06645C5.77554%200.865046%205.62016%200.700605%205.42406%200.601483C5.22796%200.502361%205.00341%200.474773%204.78915%200.523474L0.726575%201.46099C0.519997%201.50869%200.335688%201.62501%200.203728%201.79095C0.0717689%201.95689%20-4.75872e-05%202.16266%202.36575e-08%202.37468C2.36575e-08%2012.3944%208.12123%2020.5%2018.1253%2020.5C18.3374%2020.5001%2018.5433%2020.4284%2018.7093%2020.2964C18.8753%2020.1644%2018.9917%2019.9801%2019.0394%2019.7734L19.9769%2015.7109C20.0253%2015.4955%2019.9971%2015.2701%2019.8972%2015.0733C19.7973%2014.8765%2019.632%2014.7207%2019.4296%2014.6327Z'%20fill='%23AD7314'/%3e%3c/svg%3e"
-                  alt="" class="item-img">
-              </div>
-              <div class="item-content">
-                <h3 class="item-title">HOTLINE</h3>
-                <p class="item-text tw-text-bodymain">076 8666 638</p>
+              <div class="item tw-flex tw-flex-row tw-gap-[15px]">
+                <div class="item-icon tw-flex tw-items-center tw-justify-center tw-flex-shrink">
+                  <img src="data:image/svg+xml,%3csvg%20width='20'%20height='21'%20viewBox='0%200%2020%2021'%20fill='none'%20xmlns='http://www.w3.org/2000/svg'%3e%3cpath%20d='M19.4296%2014.6327L15.0546%2012.7577C14.8677%2012.678%2014.6599%2012.6612%2014.4627%2012.7099C14.2654%2012.7585%2014.0893%2012.8698%2013.9608%2013.0272L12.0233%2015.3944C8.98248%2013.9607%206.53535%2011.5136%205.10165%208.47283L7.46888%206.5353C7.62657%206.40705%207.73818%206.23091%207.78681%206.03355C7.83545%205.8362%207.81846%205.62837%207.73842%205.44153L5.86338%201.06645C5.77554%200.865046%205.62016%200.700605%205.42406%200.601483C5.22796%200.502361%205.00341%200.474773%204.78915%200.523474L0.726575%201.46099C0.519997%201.50869%200.335688%201.62501%200.203728%201.79095C0.0717689%201.95689%20-4.75872e-05%202.16266%202.36575e-08%202.37468C2.36575e-08%2012.3944%208.12123%2020.5%2018.1253%2020.5C18.3374%2020.5001%2018.5433%2020.4284%2018.7093%2020.2964C18.8753%2020.1644%2018.9917%2019.9801%2019.0394%2019.7734L19.9769%2015.7109C20.0253%2015.4955%2019.9971%2015.2701%2019.8972%2015.0733C19.7973%2014.8765%2019.632%2014.7207%2019.4296%2014.6327Z'%20fill='%23AD7314'/%3e%3c/svg%3e" alt="" class="item-img">
+                </div>
+                <div class="item-content">
+                  <h3 class="item-title">HOTLINE</h3>
+                  <p class="item-text tw-text-bodymain">076 8666 638</p>
+                </div>
               </div>
             </div>
-          </div>
-        </div>
-        <div class="img_contact tw-absolute">
-          <img src="/assets/people_contact-BujMTUg5.png" alt="">
-        </div>
 
-        <div class="form-contact tw-p-10 tw-absolute">
-          <h2 class="form-title tw-text-center tw-text-h2 tw-mb-2">ĐỂ LẠI THÔNG TIN</h2>
-          <p class="form-description tw-text-center tw-text-body16">Chúng tôi sẽ liên hệ lại bạn trong thời gian sớm
-            nhất có thể!</p>
+            <!-- <div class="form-contact tw-h-96 lg:tw-p-10 lg:tw-absolute ">
+              <h2 class="form-title tw-text-center tw-text-h2 tw-mb-2">ĐỂ LẠI THÔNG TIN</h2>
+              <p class="form-description tw-text-center tw-text-body16">Chúng tôi sẽ liên hệ lại bạn trong thời gian sớm
+                nhất có thể!</p>
+            </div> -->
+          </div>
+          <div class="img_contact tw-absolute lg:tw-block">
+            <img src="/assets/people_contact-BujMTUg5.png" alt="">
+          </div>
+
+          <div class="form-contact lg:tw-p-10 tw-absolute ">
+            <h2 class="form-title tw-text-center tw-text-h2 tw-mb-2">ĐỂ LẠI THÔNG TIN</h2>
+            <p class="form-description tw-text-center tw-text-body16">Chúng tôi sẽ liên hệ lại bạn trong thời gian sớm
+              nhất có thể!</p>
+          </div>
+
+          <!-- <div class="form-contact tw-h-96 tw-p-10 lg:tw-absolute">
+            <h2 class="form-title tw-text-center tw-text-h2 tw-mb-2">ĐỂ LẠI THÔNG TIN</h2>
+            <p class="form-description tw-text-center tw-text-body16">Chúng tôi sẽ liên hệ lại bạn trong thời gian sớm
+              nhất có thể!</p>
+          </div> -->
         </div>
       </div>
     </div>
+
   </section>
 
   <section class="section_knowlegde">
-    <div class="tw-container  tw-flex tw-flex-col tw-justify-center tw-items-center tw-py-[100px]">
+    <div
+      class="tw-container tw-flex tw-flex-col tw-justify-center tw-items-center tw-py-10 lg:!tw-pt-[120px] lg:!tw-pb-[100px]">
       <div class="title_des">
         <h2 class="title_heading">
           KIẾN THỨC
@@ -733,8 +823,7 @@
           website, Marketing và các kiến thức khác.</p>
       </div>
 
-      <div class="tw-grid tw-grid-cols-1 md:tw-grid-cols-2 tw-gap-6">
-        <!-- Bài viết lớn bên trái -->
+      <div class="tw-grid tw-grid-cols-1 md:tw-grid-cols-2 tw-gap-x-6 tw-gap-y-5">
         <div class="col_left">
           <div class="item_blog tw-relative tw-overflow-hidden">
             <img src="/assets/blog-DXC3Ibcn.png" alt="SEO Checklist 2025" class="tw-w-full tw-h-auto">
@@ -757,13 +846,12 @@
           </div>
         </div>
 
-        <!-- Danh sách bài viết bên phải -->
-        <div class="col_right tw-flex tw-flex-col tw-gap-6">
+        <div class="col_right tw-flex tw-flex-col tw-gap-[14px] lg:tw-gap-6">
           <div class="item_blog tw-flex tw-items-start tw-gap-4">
             <img src="/assets/blog-DXC3Ibcn.png" alt="SEO Image" class="tw-w-24 tw-h-16 tw-object-cover">
             <div>
               <h3 class="tw-font-bold">Hướng dẫn nhập liệu Sản phẩm đa thuộc tính</h3>
-              <p class="tw-text-sm tw-text-gray-600">Trong thế giới số đầy biến động, tối ưu hóa website (SEO) đóng vai
+              <p class="">Trong thế giới số đầy biến động, tối ưu hóa website (SEO) đóng vai
                 trò
                 vô cùng quan
                 trọng để thu hút khách hàng tiềm năng và nâng cao vị thế của bạn trên mạng internet. Với sự thay đổi
@@ -783,7 +871,7 @@
             <img src="/assets/blog-DXC3Ibcn.png" alt="SEO Image" class="tw-w-24 tw-h-16 tw-object-cover">
             <div>
               <h3 class="tw-font-bold">Hướng dẫn nhập liệu Sản phẩm đa thuộc tính</h3>
-              <p class="tw-text-sm tw-text-gray-600">Trong thế giới số đầy biến động, tối ưu hóa website (SEO) đóng vai
+              <p class="">Trong thế giới số đầy biến động, tối ưu hóa website (SEO) đóng vai
                 trò vô cùng quan trọng để thu hút khách hàng tiềm năng và nâng cao vị thế của bạn trên mạng internet.
                 Với sự thay đổi liên tục của thuật toán Google, việc nắm bắt những quy tắc và tiêu chuẩn mới là điều tối
                 quan trọng. Việc có cho mình 1 SEO Checklist rất hữu ích.
@@ -799,11 +887,11 @@
             </div>
           </div>
 
-          <div class="item_blog tw-flex tw-items-start tw-gap-4">
+          <div class="item_blog tw-flex tw-items-start tw-gap-[10px] lg:tw-gap-4">
             <img src="/assets/blog-DXC3Ibcn.png" alt="SEO Image" class="tw-w-24 tw-h-16 tw-object-cover">
             <div>
               <h3 class="tw-font-bold">Hướng dẫn nhập liệu Sản phẩm đa thuộc tính</h3>
-              <p class="tw-text-sm tw-text-gray-600">Trong thế giới số đầy biến động, tối ưu hóa website (SEO) đóng vai
+              <p class="">Trong thế giới số đầy biến động, tối ưu hóa website (SEO) đóng vai
                 trò vô cùng quan trọng để thu hút khách hàng tiềm năng và nâng cao vị thế của bạn trên mạng internet.
                 Với sự thay đổi liên tục của thuật toán Google, việc nắm bắt những quy tắc và tiêu chuẩn mới là điều tối
                 quan trọng. Việc có cho mình 1 SEO Checklist rất hữu ích.
@@ -825,6 +913,7 @@
   </section>
 
 
+
   <footer class=" tw-text-white">
     <div class="tw-container tw-mx-auto tw-pt-[50px] tw-mb-10">
       <div class="top_footer tw-flex tw-flex-col md:tw-flex-row">
@@ -838,9 +927,7 @@
           <div class="list_infofooter">
             <div class="item">
               <div class="icon tw-flex-none">
-                <img
-                  src="data:image/svg+xml,%3csvg%20width='24'%20height='24'%20viewBox='0%200%2024%2024'%20fill='none'%20xmlns='http://www.w3.org/2000/svg'%3e%3cpath%20d='M9.50246%204.25722C9.19873%203.4979%208.46332%203%207.64551%203H4.89474C3.8483%203%203%203.8481%203%204.89453C3%2013.7892%2010.2108%2021%2019.1055%2021C20.1519%2021%2021%2020.1516%2021%2019.1052L21.0005%2016.354C21.0005%2015.5361%2020.5027%2014.8009%2019.7434%2014.4971L17.1069%2013.4429C16.4249%2013.1701%2015.6483%2013.2929%2015.0839%2013.7632L14.4035%2014.3307C13.6089%2014.9929%2012.4396%2014.9402%2011.7082%2014.2088L9.79222%2012.2911C9.06079%2011.5596%209.00673%2010.3913%209.66895%209.59668L10.2363%208.9163C10.7066%208.35195%2010.8305%207.57516%2010.5577%206.89309L9.50246%204.25722Z'%20stroke='%23FFDB01'%20stroke-width='2'%20stroke-linecap='round'%20stroke-linejoin='round'/%3e%3c/svg%3e"
-                  alt="">
+                <img src="data:image/svg+xml,%3csvg%20width='24'%20height='24'%20viewBox='0%200%2024%2024'%20fill='none'%20xmlns='http://www.w3.org/2000/svg'%3e%3cpath%20d='M9.50246%204.25722C9.19873%203.4979%208.46332%203%207.64551%203H4.89474C3.8483%203%203%203.8481%203%204.89453C3%2013.7892%2010.2108%2021%2019.1055%2021C20.1519%2021%2021%2020.1516%2021%2019.1052L21.0005%2016.354C21.0005%2015.5361%2020.5027%2014.8009%2019.7434%2014.4971L17.1069%2013.4429C16.4249%2013.1701%2015.6483%2013.2929%2015.0839%2013.7632L14.4035%2014.3307C13.6089%2014.9929%2012.4396%2014.9402%2011.7082%2014.2088L9.79222%2012.2911C9.06079%2011.5596%209.00673%2010.3913%209.66895%209.59668L10.2363%208.9163C10.7066%208.35195%2010.8305%207.57516%2010.5577%206.89309L9.50246%204.25722Z'%20stroke='%23FFDB01'%20stroke-width='2'%20stroke-linecap='round'%20stroke-linejoin='round'/%3e%3c/svg%3e" alt="">
               </div>
               <div class="content">
                 076 8666 638
@@ -848,9 +935,7 @@
             </div>
             <div class="item">
               <div class="icon tw-flex-none">
-                <img
-                  src="data:image/svg+xml,%3csvg%20width='24'%20height='24'%20viewBox='0%200%2024%2024'%20fill='none'%20xmlns='http://www.w3.org/2000/svg'%3e%3cpath%20d='M9.50246%204.25722C9.19873%203.4979%208.46332%203%207.64551%203H4.89474C3.8483%203%203%203.8481%203%204.89453C3%2013.7892%2010.2108%2021%2019.1055%2021C20.1519%2021%2021%2020.1516%2021%2019.1052L21.0005%2016.354C21.0005%2015.5361%2020.5027%2014.8009%2019.7434%2014.4971L17.1069%2013.4429C16.4249%2013.1701%2015.6483%2013.2929%2015.0839%2013.7632L14.4035%2014.3307C13.6089%2014.9929%2012.4396%2014.9402%2011.7082%2014.2088L9.79222%2012.2911C9.06079%2011.5596%209.00673%2010.3913%209.66895%209.59668L10.2363%208.9163C10.7066%208.35195%2010.8305%207.57516%2010.5577%206.89309L9.50246%204.25722Z'%20stroke='%23FFDB01'%20stroke-width='2'%20stroke-linecap='round'%20stroke-linejoin='round'/%3e%3c/svg%3e"
-                  alt="">
+                <img src="data:image/svg+xml,%3csvg%20width='24'%20height='24'%20viewBox='0%200%2024%2024'%20fill='none'%20xmlns='http://www.w3.org/2000/svg'%3e%3cpath%20d='M9.50246%204.25722C9.19873%203.4979%208.46332%203%207.64551%203H4.89474C3.8483%203%203%203.8481%203%204.89453C3%2013.7892%2010.2108%2021%2019.1055%2021C20.1519%2021%2021%2020.1516%2021%2019.1052L21.0005%2016.354C21.0005%2015.5361%2020.5027%2014.8009%2019.7434%2014.4971L17.1069%2013.4429C16.4249%2013.1701%2015.6483%2013.2929%2015.0839%2013.7632L14.4035%2014.3307C13.6089%2014.9929%2012.4396%2014.9402%2011.7082%2014.2088L9.79222%2012.2911C9.06079%2011.5596%209.00673%2010.3913%209.66895%209.59668L10.2363%208.9163C10.7066%208.35195%2010.8305%207.57516%2010.5577%206.89309L9.50246%204.25722Z'%20stroke='%23FFDB01'%20stroke-width='2'%20stroke-linecap='round'%20stroke-linejoin='round'/%3e%3c/svg%3e" alt="">
               </div>
               <div class="content">
                 076 8666 638
@@ -858,9 +943,7 @@
             </div>
             <div class="item">
               <div class="icon tw-flex-none">
-                <img
-                  src="data:image/svg+xml,%3csvg%20width='24'%20height='24'%20viewBox='0%200%2024%2024'%20fill='none'%20xmlns='http://www.w3.org/2000/svg'%3e%3cpath%20d='M9.50246%204.25722C9.19873%203.4979%208.46332%203%207.64551%203H4.89474C3.8483%203%203%203.8481%203%204.89453C3%2013.7892%2010.2108%2021%2019.1055%2021C20.1519%2021%2021%2020.1516%2021%2019.1052L21.0005%2016.354C21.0005%2015.5361%2020.5027%2014.8009%2019.7434%2014.4971L17.1069%2013.4429C16.4249%2013.1701%2015.6483%2013.2929%2015.0839%2013.7632L14.4035%2014.3307C13.6089%2014.9929%2012.4396%2014.9402%2011.7082%2014.2088L9.79222%2012.2911C9.06079%2011.5596%209.00673%2010.3913%209.66895%209.59668L10.2363%208.9163C10.7066%208.35195%2010.8305%207.57516%2010.5577%206.89309L9.50246%204.25722Z'%20stroke='%23FFDB01'%20stroke-width='2'%20stroke-linecap='round'%20stroke-linejoin='round'/%3e%3c/svg%3e"
-                  alt="">
+                <img src="data:image/svg+xml,%3csvg%20width='24'%20height='24'%20viewBox='0%200%2024%2024'%20fill='none'%20xmlns='http://www.w3.org/2000/svg'%3e%3cpath%20d='M9.50246%204.25722C9.19873%203.4979%208.46332%203%207.64551%203H4.89474C3.8483%203%203%203.8481%203%204.89453C3%2013.7892%2010.2108%2021%2019.1055%2021C20.1519%2021%2021%2020.1516%2021%2019.1052L21.0005%2016.354C21.0005%2015.5361%2020.5027%2014.8009%2019.7434%2014.4971L17.1069%2013.4429C16.4249%2013.1701%2015.6483%2013.2929%2015.0839%2013.7632L14.4035%2014.3307C13.6089%2014.9929%2012.4396%2014.9402%2011.7082%2014.2088L9.79222%2012.2911C9.06079%2011.5596%209.00673%2010.3913%209.66895%209.59668L10.2363%208.9163C10.7066%208.35195%2010.8305%207.57516%2010.5577%206.89309L9.50246%204.25722Z'%20stroke='%23FFDB01'%20stroke-width='2'%20stroke-linecap='round'%20stroke-linejoin='round'/%3e%3c/svg%3e" alt="">
               </div>
               <div class="content">
                 076 8666 638
@@ -868,9 +951,7 @@
             </div>
             <div class="item">
               <div class="icon tw-flex-none">
-                <img
-                  src="data:image/svg+xml,%3csvg%20width='24'%20height='24'%20viewBox='0%200%2024%2024'%20fill='none'%20xmlns='http://www.w3.org/2000/svg'%3e%3cpath%20d='M9.50246%204.25722C9.19873%203.4979%208.46332%203%207.64551%203H4.89474C3.8483%203%203%203.8481%203%204.89453C3%2013.7892%2010.2108%2021%2019.1055%2021C20.1519%2021%2021%2020.1516%2021%2019.1052L21.0005%2016.354C21.0005%2015.5361%2020.5027%2014.8009%2019.7434%2014.4971L17.1069%2013.4429C16.4249%2013.1701%2015.6483%2013.2929%2015.0839%2013.7632L14.4035%2014.3307C13.6089%2014.9929%2012.4396%2014.9402%2011.7082%2014.2088L9.79222%2012.2911C9.06079%2011.5596%209.00673%2010.3913%209.66895%209.59668L10.2363%208.9163C10.7066%208.35195%2010.8305%207.57516%2010.5577%206.89309L9.50246%204.25722Z'%20stroke='%23FFDB01'%20stroke-width='2'%20stroke-linecap='round'%20stroke-linejoin='round'/%3e%3c/svg%3e"
-                  alt="">
+                <img src="data:image/svg+xml,%3csvg%20width='24'%20height='24'%20viewBox='0%200%2024%2024'%20fill='none'%20xmlns='http://www.w3.org/2000/svg'%3e%3cpath%20d='M9.50246%204.25722C9.19873%203.4979%208.46332%203%207.64551%203H4.89474C3.8483%203%203%203.8481%203%204.89453C3%2013.7892%2010.2108%2021%2019.1055%2021C20.1519%2021%2021%2020.1516%2021%2019.1052L21.0005%2016.354C21.0005%2015.5361%2020.5027%2014.8009%2019.7434%2014.4971L17.1069%2013.4429C16.4249%2013.1701%2015.6483%2013.2929%2015.0839%2013.7632L14.4035%2014.3307C13.6089%2014.9929%2012.4396%2014.9402%2011.7082%2014.2088L9.79222%2012.2911C9.06079%2011.5596%209.00673%2010.3913%209.66895%209.59668L10.2363%208.9163C10.7066%208.35195%2010.8305%207.57516%2010.5577%206.89309L9.50246%204.25722Z'%20stroke='%23FFDB01'%20stroke-width='2'%20stroke-linecap='round'%20stroke-linejoin='round'/%3e%3c/svg%3e" alt="">
               </div>
               <div class="content">
                 076 8666 638
@@ -881,30 +962,22 @@
           <div class="list_socials tw-mt-3 tw-flex tw-gap-2">
             <div class="item_social">
               <a href="#">
-                <img
-                  src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAQCAYAAAAMJL+VAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAD/SURBVHgBtZQxDoIwFIZ/CKuB2cV6A7yBF3Bwc2TTUU+geALY3GTRuBrjrDeQGwgLqxgPoK/SRgYDhcCXvLwHffRvH+3TIHjbsMk5ZD0yRmaJISsX/yMSPs3ZUQsR8JdabvIbmsUjkYUUuJAbonn6ughstIMtBazCtA4NdxlqwHQqDytN4wLnOzBdZrE6ll4lG7MVcKCzMHJUv/gKMFSBl2q9zXZUXjaTC6SoQxIr/RejskASARsXOAUq2U8DqrxoHXsf2HlZrEaqtgM+4WSQrb4aqbzJD5TdhXqM5TEN0Q6hFHDRPD41u0iTT+JGz/HrS0x4E8Xli3NxJOwq2/UHQgg9+VNPtCUAAAAASUVORK5CYII="
-                  alt="">
+                <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAQCAYAAAAMJL+VAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAD/SURBVHgBtZQxDoIwFIZ/CKuB2cV6A7yBF3Bwc2TTUU+geALY3GTRuBrjrDeQGwgLqxgPoK/SRgYDhcCXvLwHffRvH+3TIHjbsMk5ZD0yRmaJISsX/yMSPs3ZUQsR8JdabvIbmsUjkYUUuJAbonn6ughstIMtBazCtA4NdxlqwHQqDytN4wLnOzBdZrE6ll4lG7MVcKCzMHJUv/gKMFSBl2q9zXZUXjaTC6SoQxIr/RejskASARsXOAUq2U8DqrxoHXsf2HlZrEaqtgM+4WSQrb4aqbzJD5TdhXqM5TEN0Q6hFHDRPD41u0iTT+JGz/HrS0x4E8Xli3NxJOwq2/UHQgg9+VNPtCUAAAAASUVORK5CYII=" alt="">
               </a>
             </div>
             <div class="item_social">
               <a href="#">
-                <img
-                  src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAQCAYAAAAMJL+VAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAD/SURBVHgBtZQxDoIwFIZ/CKuB2cV6A7yBF3Bwc2TTUU+geALY3GTRuBrjrDeQGwgLqxgPoK/SRgYDhcCXvLwHffRvH+3TIHjbsMk5ZD0yRmaJISsX/yMSPs3ZUQsR8JdabvIbmsUjkYUUuJAbonn6ughstIMtBazCtA4NdxlqwHQqDytN4wLnOzBdZrE6ll4lG7MVcKCzMHJUv/gKMFSBl2q9zXZUXjaTC6SoQxIr/RejskASARsXOAUq2U8DqrxoHXsf2HlZrEaqtgM+4WSQrb4aqbzJD5TdhXqM5TEN0Q6hFHDRPD41u0iTT+JGz/HrS0x4E8Xli3NxJOwq2/UHQgg9+VNPtCUAAAAASUVORK5CYII="
-                  alt="">
+                <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAQCAYAAAAMJL+VAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAD/SURBVHgBtZQxDoIwFIZ/CKuB2cV6A7yBF3Bwc2TTUU+geALY3GTRuBrjrDeQGwgLqxgPoK/SRgYDhcCXvLwHffRvH+3TIHjbsMk5ZD0yRmaJISsX/yMSPs3ZUQsR8JdabvIbmsUjkYUUuJAbonn6ughstIMtBazCtA4NdxlqwHQqDytN4wLnOzBdZrE6ll4lG7MVcKCzMHJUv/gKMFSBl2q9zXZUXjaTC6SoQxIr/RejskASARsXOAUq2U8DqrxoHXsf2HlZrEaqtgM+4WSQrb4aqbzJD5TdhXqM5TEN0Q6hFHDRPD41u0iTT+JGz/HrS0x4E8Xli3NxJOwq2/UHQgg9+VNPtCUAAAAASUVORK5CYII=" alt="">
               </a>
             </div>
             <div class="item_social">
               <a href="#">
-                <img
-                  src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAQCAYAAAAMJL+VAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAD/SURBVHgBtZQxDoIwFIZ/CKuB2cV6A7yBF3Bwc2TTUU+geALY3GTRuBrjrDeQGwgLqxgPoK/SRgYDhcCXvLwHffRvH+3TIHjbsMk5ZD0yRmaJISsX/yMSPs3ZUQsR8JdabvIbmsUjkYUUuJAbonn6ughstIMtBazCtA4NdxlqwHQqDytN4wLnOzBdZrE6ll4lG7MVcKCzMHJUv/gKMFSBl2q9zXZUXjaTC6SoQxIr/RejskASARsXOAUq2U8DqrxoHXsf2HlZrEaqtgM+4WSQrb4aqbzJD5TdhXqM5TEN0Q6hFHDRPD41u0iTT+JGz/HrS0x4E8Xli3NxJOwq2/UHQgg9+VNPtCUAAAAASUVORK5CYII="
-                  alt="">
+                <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAQCAYAAAAMJL+VAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAD/SURBVHgBtZQxDoIwFIZ/CKuB2cV6A7yBF3Bwc2TTUU+geALY3GTRuBrjrDeQGwgLqxgPoK/SRgYDhcCXvLwHffRvH+3TIHjbsMk5ZD0yRmaJISsX/yMSPs3ZUQsR8JdabvIbmsUjkYUUuJAbonn6ughstIMtBazCtA4NdxlqwHQqDytN4wLnOzBdZrE6ll4lG7MVcKCzMHJUv/gKMFSBl2q9zXZUXjaTC6SoQxIr/RejskASARsXOAUq2U8DqrxoHXsf2HlZrEaqtgM+4WSQrb4aqbzJD5TdhXqM5TEN0Q6hFHDRPD41u0iTT+JGz/HrS0x4E8Xli3NxJOwq2/UHQgg9+VNPtCUAAAAASUVORK5CYII=" alt="">
               </a>
             </div>
             <div class="item_social">
               <a href="#">
-                <img
-                  src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAQCAYAAAAMJL+VAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAD/SURBVHgBtZQxDoIwFIZ/CKuB2cV6A7yBF3Bwc2TTUU+geALY3GTRuBrjrDeQGwgLqxgPoK/SRgYDhcCXvLwHffRvH+3TIHjbsMk5ZD0yRmaJISsX/yMSPs3ZUQsR8JdabvIbmsUjkYUUuJAbonn6ughstIMtBazCtA4NdxlqwHQqDytN4wLnOzBdZrE6ll4lG7MVcKCzMHJUv/gKMFSBl2q9zXZUXjaTC6SoQxIr/RejskASARsXOAUq2U8DqrxoHXsf2HlZrEaqtgM+4WSQrb4aqbzJD5TdhXqM5TEN0Q6hFHDRPD41u0iTT+JGz/HrS0x4E8Xli3NxJOwq2/UHQgg9+VNPtCUAAAAASUVORK5CYII="
-                  alt="">
+                <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAQCAYAAAAMJL+VAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAD/SURBVHgBtZQxDoIwFIZ/CKuB2cV6A7yBF3Bwc2TTUU+geALY3GTRuBrjrDeQGwgLqxgPoK/SRgYDhcCXvLwHffRvH+3TIHjbsMk5ZD0yRmaJISsX/yMSPs3ZUQsR8JdabvIbmsUjkYUUuJAbonn6ughstIMtBazCtA4NdxlqwHQqDytN4wLnOzBdZrE6ll4lG7MVcKCzMHJUv/gKMFSBl2q9zXZUXjaTC6SoQxIr/RejskASARsXOAUq2U8DqrxoHXsf2HlZrEaqtgM+4WSQrb4aqbzJD5TdhXqM5TEN0Q6hFHDRPD41u0iTT+JGz/HrS0x4E8Xli3NxJOwq2/UHQgg9+VNPtCUAAAAASUVORK5CYII=" alt="">
               </a>
             </div>
           </div>
@@ -1116,54 +1189,147 @@
     document.addEventListener("DOMContentLoaded", function () {
       AOS.init(); // Khởi động AOS
 
-      let tl = gsap.timeline({
-        scrollTrigger: {
-          trigger: ".wrapper_timeline",
-          start: "top-=100 center",
-          end: "top-=0 center",
-          toggleActions: "play none none none",
-          markers: true, // Debug markers (có thể xóa)
-        }
-      });
-
+      let timelineProcess = document.querySelector(".timeline_process");
+      let timelineProcessMobile = document.querySelector(".timeline_process_mobile");
       let dots = document.querySelectorAll(".timeline-dot");
-      let items = document.querySelectorAll(".timeline-item"); // Lấy tất cả item
+      let items = document.querySelectorAll(".timeline-item");
       let step = 100 / dots.length;
+      let currentMode = window.innerWidth <= 768 ? "mobile" : "pc"; // Xác định chế độ ban đầu
+      let tlPC, tlMobile;
 
-      dots.forEach((dot, index) => {
-        tl.to(".timeline_process", {
-          width: `${(index + 1) * step}%`,
-          duration: 0.5,
-          ease: "power1.inOut",
-          backgroundColor: "rgba(255, 219, 1, 1)",
-          onStart: () => {
-            gsap.to(dot, {
-              backgroundColor: "#ffffff",
-              borderColor: "rgba(255, 219, 1, 1)",
-              duration: 0.5,
-              ease: "power1.inOut"
-            });
+      function resetEffects() {
+        // Xóa class active trên tất cả items
+        items.forEach(item => item.classList.remove("active"));
 
-            // Khi dot active, thêm class "active" vào timeline-item
-            items[index].classList.add("active");
-
-            // Hiệu ứng fade-in bằng GSAP cho thẻ <p>
-            gsap.to(items[index].querySelector("p"), {
-              opacity: 1,
-              y: 0,
-              duration: 0.5,
-              ease: "power1.out"
-            });
-          }
+        // Reset lại màu sắc dot
+        dots.forEach(dot => {
+          gsap.set(dot, {
+            backgroundColor: "",
+            borderColor: "",
+          });
         });
-      });
+
+        // Reset lại tiến trình
+        gsap.set(".timeline_process", { width: "0%" });
+        gsap.set(".timeline_process_mobile", { height: "0%" });
+
+        // Reset lại opacity & vị trí của <p> trong mỗi item
+        items.forEach(item => {
+          gsap.set(item.querySelector("p"), {
+            opacity: 0,
+            y: 20
+          });
+        });
+      }
+
+      function initTimeline() {
+        let isMobile = window.innerWidth <= 768;
+        let newMode = isMobile ? "mobile" : "pc";
+
+        // Nếu chuyển đổi giữa PC ↔ Mobile, reset hiệu ứng
+        if (newMode !== currentMode) {
+          resetEffects();
+          currentMode = newMode;
+        }
+
+        // Hủy animation cũ nếu có
+        if (tlPC) tlPC.kill();
+        if (tlMobile) tlMobile.kill();
+
+        if (isMobile) {
+          timelineProcess.style.display = "none";
+          timelineProcessMobile.style.display = "block";
+
+          // GSAP Animation cho Mobile
+          tlMobile = gsap.timeline({
+            scrollTrigger: {
+              trigger: ".wrapper_timeline",
+              start: "top-=100 center",
+              end: "bottom top",
+              toggleActions: "play none none none",
+            },
+          });
+
+          dots.forEach((dot, index) => {
+            tlMobile.to(".timeline_process_mobile", {
+              height: `${(index + 1) * step}%`,
+              duration: 0.3,
+              ease: "power1.inOut",
+            })
+              .to(dot, {
+                backgroundColor: "#ffffff",
+                borderColor: "rgba(255, 219, 1, 1)",
+                duration: 0.3,
+                ease: "power1.inOut",
+                onStart: () => {
+                  items[index].classList.add("active");
+                  gsap.to(items[index].querySelector("p"), {
+                    opacity: 1,
+                    y: 0,
+                    duration: 0.3,
+                    ease: "power1.out",
+                  });
+                }
+              })
+              .to({}, { duration: 0.1 });
+          });
+
+        } else {
+          timelineProcess.style.display = "block";
+          timelineProcessMobile.style.display = "none";
+
+          // GSAP Animation cho PC
+          tlPC = gsap.timeline({
+            scrollTrigger: {
+              trigger: ".wrapper_timeline",
+              start: "top-=100 center",
+              end: "top-=0 center",
+              toggleActions: "play none none none",
+            },
+          });
+
+          dots.forEach((dot, index) => {
+            tlPC.to(".timeline_process", {
+              width: `${(index + 1) * step}%`,
+              duration: 0.5,
+              ease: "power1.inOut",
+              backgroundColor: "rgba(255, 219, 1, 1)",
+              onStart: () => {
+                gsap.to(dot, {
+                  backgroundColor: "#ffffff",
+                  borderColor: "rgba(255, 219, 1, 1)",
+                  duration: 0.5,
+                  ease: "power1.inOut"
+                });
+
+                items[index].classList.add("active");
+
+                gsap.to(items[index].querySelector("p"), {
+                  opacity: 1,
+                  y: 0,
+                  duration: 0.5,
+                  ease: "power1.out"
+                });
+              }
+            });
+          });
+        }
+      }
+
+      // Chạy lần đầu khi tải trang
+      initTimeline();
+
+      // Cập nhật animation khi resize
+      window.addEventListener("resize", initTimeline);
     });
+
+
 
 
   </script>
   <script>
     var swiper = new Swiper(".swiper_feedback", {
-      slidesPerView: 3,
+      slidesPerView: 1,
       spaceBetween: 30,
       autoHeight: false,
       loop: true,
@@ -1171,10 +1337,24 @@
         el: ".swiper-pagination",
         clickable: true,
       },
+      breakpoints: {
+        640: {
+          slidesPerView: 2,
+          spaceBetween: 10,
+        },
+        768: {
+          slidesPerView: 2,
+          spaceBetween: 20,
+        },
+        1024: {
+          slidesPerView: 3,
+          spaceBetween: 30,
+        },
+      }
     });
 
     var swiper = new Swiper(".swiper_project", {
-      slidesPerView: 4,
+      slidesPerView: 2,
       spaceBetween: 15,
       autoHeight: false,
       loop: true,
@@ -1182,11 +1362,32 @@
         el: ".swiper-pagination",
         clickable: true,
       },
+
+      navigation: {
+        nextEl: ".custom_btn_prev",
+        prevEl: ".custom_btn_next"
+      },
+
+      breakpoints: {
+        640: {
+          slidesPerView: 2,
+          spaceBetween: 10,
+        },
+        768: {
+          slidesPerView: 3,
+          spaceBetween: 20,
+        },
+        1024: {
+          slidesPerView: 4,
+          spaceBetween: 30,
+        },
+      }
     });
 
   </script>
 
   <!-- <script src="./src/main.js"></script> -->
 </body>
+
 
 </html>

@@ -1,0 +1,15 @@
+body {
+    font-family: 'Inter', sans-serif;
+}
+
+.timeline-item p {
+    margin-bottom: 0px;
+}
+
+
+.custom_btn_next.swiper-button-disabled,
+.custom_btn_prev.swiper-button-disabled {
+    opacity: .35;
+    cursor: auto;
+    pointer-events: none;
+}
