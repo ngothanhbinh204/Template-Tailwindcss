@@ -201,3 +201,22 @@ document.addEventListener("DOMContentLoaded", function () {
       }
     });
   });
+
+
+  jQuery(document).ready(function($){
+    let timer;
+    
+    // Khi hover vào menu chính
+    $('.menu-item').hover(
+        function() {
+            clearTimeout(timer);
+            $(this).children('.sub-menu').fadeIn(500);
+        }, 
+        function() {
+            let submenu = $(this).children('.sub-menu');
+            timer = setTimeout(function() {
+                submenu.fadeOut(500);
+            }, 500); // Đợi 300ms sau khi chuột ra
+        }
+    );
+});
